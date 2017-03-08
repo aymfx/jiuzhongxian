@@ -1,0 +1,698 @@
+/*--------首页文件-----------------*/
+#topHeader{
+    height: 27px;
+    min-width: 1200px;
+    background: #f2f2f2;
+}
+#topbanner{
+    height: 90px;
+    width: 100%;
+    #topbanner1{
+       display: block;
+        height: 90px;
+        width: 100%;
+        background:url(../img/imgsindex/top_i.jpg);
+    }
+}
+
+#header_i{
+    height: 125px;
+    background: #99f;
+}
+#nav_i{
+    height: 34px;
+    background: #990000;
+}
+#banner{
+    height: 470px;
+    background: #f9f;
+}
+
+#mianwarp{
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+.mainBox{
+    
+}
+
+$hot_h:500px;
+#hot_shop{
+    width: 100%;
+    height:$hot_h;
+    overflow: hidden;
+    #hot_left{
+    width: 920px;
+    height: $hot_h;
+    background: #9999FF;
+    float: left;
+}
+
+    #hot_right{
+    width: 272px;
+    height: $hot_h;
+    background: #99FF99;
+    float: right;
+}
+}
+
+#festival{
+    width: 100%;
+    height: 130px;
+    background: pink;
+    margin-top: 20px;
+}
+
+#cheap{
+    width: 100%;
+    height: 260px;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+
+/*楼层*/
+$wine_h:485px;
+#white_wine{
+    width: 100%;
+    height: $wine_h;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+#grape_wine{
+    width: 100%;
+    height: $wine_h;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+#foreign_wine{
+    width: 100%;
+    height: $wine_h;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+#beer{
+    width: 100%;
+    height: $wine_h;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+#food{
+    width: 100%;
+    height: $wine_h;
+    background: #FF99FF;
+    margin-top: 20px;
+}
+
+#recommend{
+    width: 100%;
+    height: 346px;
+    background: #FFFF99;
+    margin-top: 20px;
+}
+
+#boutique{
+     width: 100%;
+    height: 134px;
+    background: #FFFF99;
+    margin-top: 20px;
+}
+
+#footer_i{
+     #footTopBox{
+         height: 289px;
+         background: #333;
+     }
+     
+      #footBottomBox{
+         height: 289px;
+         background: #999;
+     }
+}
+
+//这是两个login 和register相同的部分
+
+//头部
+#header_l{
+    width: 100%;
+    height: 88px;
+}
+
+#header_l_t{
+        width: 1000px;
+        height: 88px;
+        margin: 0 auto;
+       
+        overflow: hidden;
+        .header_l_t_l{
+            float: left;
+            padding-top: 14px;
+        }
+        .header_l_t_r{
+            float: right;
+            overflow: hidden;
+            padding-top: 50px;
+        } 
+    }
+
+#header_l_t_r_l{
+     float: left;
+     width: 165px;
+     padding-right: 20px;
+     span{
+         color: #999999;
+     }
+     a{
+         color:#0066cc;
+         
+         &:hover{
+             text-decoration: underline;
+         }
+     }
+}
+
+#header_l_t_r_r{
+     float: right;
+     width: 70px;
+     padding-right: 10px;
+     
+}
+#help{
+     color:#666666;
+     cursor: pointer;
+      .xiajian{
+          float: right;
+         display:inline-block;
+         position: relative;
+         top:1px;
+         width: 15px;
+         height: 15px;
+         background-image:url(../img/img-login-register/regLogin.png);
+         background-repeat: no-repeat;
+         background-position: -23px 0;
+     }
+}
+
+//尾部
+#footer_l{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    height: 90px;
+    p{
+            line-height:30px;
+            color: #333;
+    }
+    p+p{
+        color:red;
+    }
+}
+
+
+
+/*-------这部分是login页面-----*/
+
+
+
+#banner_l{
+    height: 650px;
+     background: url(../img/img-login-register/login_banner.jpg) no-repeat center top;
+    position: relative;
+}
+
+#login_box{
+    width: 352-39px;
+    height: 407-16px;
+    background: #fff;
+    position: absolute;
+    top:102px;
+    right: 173px;
+    padding-left: 39px;
+    padding-top: 16px;
+   .login_top{
+       width: 270px;
+       height: 43px;
+       border-bottom: 1px solid #EAEAEA;
+       margin-bottom: 18px;
+       a,span{
+           font-size: 16px;
+           line-height: 43px;
+           font-family: "微软雅黑";
+           cursor: pointer;
+       }
+       span{
+           margin: 0 5px;
+       }
+       .z_1{
+           color: #e4393c;
+            font-weight: bold;
+       }
+       .z_2{
+           color: #999;
+           &:hover{
+               color: #0066cc;
+               text-decoration: underline;
+           }
+       }
+   }
+   .login{
+       width: 270px;
+       height: 40px;
+       border: 1px solid #999999;
+       margin-bottom: 18px;
+       background: #f3f3f3;
+       em{
+            float: left;
+            color: #666666;
+             width: 26px;
+             height: 26px;
+             margin-left:9px;
+             margin-top: 8px;
+             margin-right: 9px;
+            
+       }
+       input{
+          border: 0;
+          border-left: 1px solid #999; 
+          width: 269-44-5px;
+          height:40px;
+          background: #fff;
+          padding-left: 5px;
+       }
+   }
+}
+.login1 em{
+       background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -50px 0;
+}
+
+.login2 em{
+       background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -78px 0;
+}
+.login3{
+    position: relative;
+    input{
+        width: 269-44-5-60px;
+    }
+    em{
+       background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -420px 0;
+}
+    span{
+        width: 60px;
+        background: #fff;
+        float: right;
+        right: 0;
+        top:0;
+        position: absolute;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-style: italic;
+}
+}
+.login4{
+    margin-bottom: 13px;
+    input{
+        border: 0;
+        width: 270px;
+        height: 43px;
+        background:#e10303;
+        border-radius: 2px;
+        font-size: 18px;
+        font-family: "微软雅黑";
+        color: #fff;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+       
+}
+.login5{
+    width: 270px;
+    margin-bottom: 14px;
+    input{
+        position: relative;
+            top:2px;
+    }
+    label{
+        color:#aaa;
+    }
+    a{
+        float: right;
+        margin-left: 5px;
+    }
+    .login_a1{
+        color: #0066CC;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .login_a2:hover{
+        text-decoration: underline;
+    }
+}
+
+#hezuo{
+    width: 270px;
+    height: 60px;
+    border-top:1px solid #EAEAEA;
+    line-height: 60px;
+    color:#aaa;
+    a{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top:13px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .login_1{
+        
+        background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: 0px -35px;
+        &:hover{
+            background-position: 0px -86px; 
+        }
+    }
+    .login_2{
+        
+        background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -50px -35px;
+        &:hover{
+            background-position: -50px -86px; 
+        }
+    }
+    .login_3{
+        
+        background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -102px -35px;
+        &:hover{
+            background-position: -102px -86px; 
+        }
+    }
+    .login_4{
+        
+        background-image:url(../img/img-login-register/regLogin.png);
+        background-repeat: no-repeat;
+        background-position: -152px -35px;
+        &:hover{
+            background-position: -152px -86px; 
+        }
+    }
+}
+
+#login_erweima{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-image:url(../img/img-login-register/regLogin.png);
+    background-repeat: no-repeat;
+    background-position: 0px -230px;
+    cursor: pointer;
+}
+
+
+
+
+//register
+#register_main{
+    background: url(../img/img-login-register/register_bg.jpg) repeat-x scroll left top;
+    padding-top: 70px;
+    height: 600px;
+    position: relative;
+}
+
+#register_box{
+    position: absolute;
+    left:180px;
+    top:73px;
+    width: 990px;
+    height: 500px;
+    background: #fff;
+    -webkit-box-shadow: -2px 5px 5px #eaeaea;
+    -moz-box-shadow: -2px 5px 5px #eaeaea;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 69px 307px 0 279px;
+    
+    .regist{
+        overflow: hidden;
+        margin-bottom: 15px;
+        span{
+            float: left;
+            width: 66px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            color: #666666;
+        }
+        div{
+            border: 1px solid #999999;
+            float: right;
+            width: 300px;
+            height: 40px;
+            overflow: hidden;
+            i{
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin-left:9px;
+                margin-top: 9px;
+                 margin-right: 8px;
+                background-image:url(../img/img-login-register/regLogin.png);
+                background-repeat: no-repeat;
+                background-position: -50px 0;
+            }
+            input{
+                border: 0;
+                width: 177px;
+                height: 40px;
+                padding-right: 80px;
+            }
+        }
+    }
+    
+    .regist2{
+        overflow: hidden;
+        margin-bottom: 15px;
+        span{
+            float: left;
+            width: 66px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            color: #666666;
+        }
+        div{
+            border: 1px solid #999999;
+            float: right;
+            width: 300px;
+            height: 40px;
+            overflow: hidden;
+            i{
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin-left:9px;
+                margin-top: 9px;
+                 margin-right: 8px;
+                background-image:url(../img/img-login-register/regLogin.png);
+                background-repeat: no-repeat;
+                background-position: -426px 0;
+            }
+            input{
+                border: 0;
+               width: 177px;
+                height: 40px;
+                
+            }
+            #yanzhengma{
+                float: right;
+                width: 80px;
+                text-align: center;
+                line-height: 40px;
+                font-style: italic;
+            }
+        }
+    }
+    
+    .regist3{
+        overflow: hidden;
+        margin-bottom: 15px;
+        span{
+            float: left;
+            width: 66px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            color: #666666;
+        }
+        div{
+            border: 1px solid #999999;
+            float: right;
+            width: 300px;
+            height: 40px;
+            overflow: hidden;
+            i{
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin-left:9px;
+                margin-top: 9px;
+                 margin-right: 8px;
+                background-image:url(../img/img-login-register/regLogin.png);
+                background-repeat: no-repeat;
+                background-position: -264px 0;
+            }
+            input{
+                border: 0;
+                width: 177px;
+                height: 40px;
+                padding-right: 80px;
+            }
+        }
+    }
+    
+    .regist4{
+        overflow: hidden;
+        margin-bottom: 15px;
+        span{
+            float: left;
+            width: 66px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            color: #666666;
+        }
+        div{
+            border: 1px solid #999999;
+            float: right;
+            width: 300px;
+            height: 40px;
+            overflow: hidden;
+            i{
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin-left:9px;
+                margin-top: 9px;
+                 margin-right: 8px;
+                background-image:url(../img/img-login-register/regLogin.png);
+                background-repeat: no-repeat;
+                background-position: -83px 0;
+            }
+            input{
+                border: 0;
+               width: 177px;
+                height: 40px;
+                padding-right: 80px;
+            }
+        }
+    }
+    
+    .regist5{
+        overflow: hidden;
+        margin-bottom: 15px;
+        span{
+            float: left;
+            width: 66px;
+            height: 42px;
+            line-height: 42px;
+            text-align: right;
+            font-size: 16px;
+            color: #666666;
+        }
+        div{
+            border: 1px solid #999999;
+            float: right;
+            width: 300px;
+            height: 40px;
+            overflow: hidden;
+            i{
+                width: 26px;
+                height: 26px;
+                float: left;
+                margin-left:9px;
+                margin-top: 9px;
+                margin-right: 8px;
+                background-image:url(../img/img-login-register/regLogin.png);
+                background-repeat: no-repeat;
+                background-position: -83px 0;
+            }
+            input{
+                border: 0;
+                width: 177px;
+                height: 40px;
+                padding-right: 80px;
+            }
+        }
+    }
+    .regist6{
+        padding-left: 96px;
+        input{
+            position: relative;
+            top:2px;
+        }
+        a{
+            color: #0066cc;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .regist7{
+        width: 302px;
+        height: 42px;
+        margin-top: 10px;
+        padding-left: 96px;
+        
+        input{
+             border: 0;
+             width: 302px;
+             height: 42px;
+             background:#e10303;
+             border-radius: 2px;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            color: #fff;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+        
+    }
+}
+
+#register_tishi{
+    display: block;
+    position: absolute;
+    left: 1034px;
+    top:39px;
+    width: 116px;
+    height: 34px;
+    background:#fff;
+    color: #ff9900;
+    text-align: center;
+    line-height: 34px;
+    border: 2px solid #eaeaea;
+    border-bottom: none;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius:0;
+}

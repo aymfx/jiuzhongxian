@@ -1,0 +1,674 @@
+@charset "UTF-8";
+/*--------首页文件-----------------*/
+#topHeader {
+  height: 27px;
+  min-width: 1200px;
+  background: #f2f2f2;
+}
+
+#topbanner {
+  height: 90px;
+  width: 100%;
+}
+#topbanner #topbanner1 {
+  display: block;
+  height: 90px;
+  width: 100%;
+  background: url(../img/imgsindex/top_i.jpg);
+}
+
+#header_i {
+  height: 125px;
+  background: #99f;
+}
+
+#nav_i {
+  height: 34px;
+  background: #990000;
+}
+
+#banner {
+  height: 470px;
+  background: #f9f;
+}
+
+#mianwarp {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#hot_shop {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+#hot_shop #hot_left {
+  width: 920px;
+  height: 500px;
+  background: #9999FF;
+  float: left;
+}
+#hot_shop #hot_right {
+  width: 272px;
+  height: 500px;
+  background: #99FF99;
+  float: right;
+}
+
+#festival {
+  width: 100%;
+  height: 130px;
+  background: pink;
+  margin-top: 20px;
+}
+
+#cheap {
+  width: 100%;
+  height: 260px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+/*楼层*/
+#white_wine {
+  width: 100%;
+  height: 485px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+#grape_wine {
+  width: 100%;
+  height: 485px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+#foreign_wine {
+  width: 100%;
+  height: 485px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+#beer {
+  width: 100%;
+  height: 485px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+#food {
+  width: 100%;
+  height: 485px;
+  background: #FF99FF;
+  margin-top: 20px;
+}
+
+#recommend {
+  width: 100%;
+  height: 346px;
+  background: #FFFF99;
+  margin-top: 20px;
+}
+
+#boutique {
+  width: 100%;
+  height: 134px;
+  background: #FFFF99;
+  margin-top: 20px;
+}
+
+#footer_i #footTopBox {
+  height: 289px;
+  background: #333;
+}
+#footer_i #footBottomBox {
+  height: 289px;
+  background: #999;
+}
+
+#header_l {
+  width: 100%;
+  height: 88px;
+}
+
+#header_l_t {
+  width: 1000px;
+  height: 88px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#header_l_t .header_l_t_l {
+  float: left;
+  padding-top: 14px;
+}
+#header_l_t .header_l_t_r {
+  float: right;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+#header_l_t_r_l {
+  float: left;
+  width: 165px;
+  padding-right: 20px;
+}
+#header_l_t_r_l span {
+  color: #999999;
+}
+#header_l_t_r_l a {
+  color: #0066cc;
+}
+#header_l_t_r_l a:hover {
+  text-decoration: underline;
+}
+
+#header_l_t_r_r {
+  float: right;
+  width: 70px;
+  padding-right: 10px;
+}
+
+#help {
+  color: #666666;
+  cursor: pointer;
+}
+#help .xiajian {
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -23px 0;
+}
+
+#footer_l {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  height: 90px;
+}
+#footer_l p {
+  line-height: 30px;
+  color: #333;
+}
+#footer_l p + p {
+  color: red;
+}
+
+/*-------这部分是login页面-----*/
+#banner_l {
+  height: 650px;
+  background: url(../img/img-login-register/login_banner.jpg) no-repeat center top;
+  position: relative;
+}
+
+#login_box {
+  width: 313px;
+  height: 391px;
+  background: #fff;
+  position: absolute;
+  top: 102px;
+  right: 173px;
+  padding-left: 39px;
+  padding-top: 16px;
+}
+#login_box .login_top {
+  width: 270px;
+  height: 43px;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 18px;
+}
+#login_box .login_top a, #login_box .login_top span {
+  font-size: 16px;
+  line-height: 43px;
+  font-family: "微软雅黑";
+  cursor: pointer;
+}
+#login_box .login_top span {
+  margin: 0 5px;
+}
+#login_box .login_top .z_1 {
+  color: #e4393c;
+  font-weight: bold;
+}
+#login_box .login_top .z_2 {
+  color: #999;
+}
+#login_box .login_top .z_2:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+#login_box .login {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #999999;
+  margin-bottom: 18px;
+  background: #f3f3f3;
+}
+#login_box .login em {
+  float: left;
+  color: #666666;
+  width: 26px;
+  height: 26px;
+  margin-left: 9px;
+  margin-top: 8px;
+  margin-right: 9px;
+}
+#login_box .login input {
+  border: 0;
+  border-left: 1px solid #999;
+  width: 220px;
+  height: 40px;
+  background: #fff;
+  padding-left: 5px;
+}
+
+.login1 em {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -50px 0;
+}
+
+.login2 em {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -78px 0;
+}
+
+.login3 {
+  position: relative;
+}
+.login3 input {
+  width: 160px;
+}
+.login3 em {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -420px 0;
+}
+.login3 span {
+  width: 60px;
+  background: #fff;
+  float: right;
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.login4 {
+  margin-bottom: 13px;
+}
+.login4 input {
+  border: 0;
+  width: 270px;
+  height: 43px;
+  background: #e10303;
+  border-radius: 2px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.login5 {
+  width: 270px;
+  margin-bottom: 14px;
+}
+.login5 input {
+  position: relative;
+  top: 2px;
+}
+.login5 label {
+  color: #aaa;
+}
+.login5 a {
+  float: right;
+  margin-left: 5px;
+}
+.login5 .login_a1 {
+  color: #0066CC;
+}
+.login5 .login_a1:hover {
+  text-decoration: underline;
+}
+.login5 .login_a2:hover {
+  text-decoration: underline;
+}
+
+#hezuo {
+  width: 270px;
+  height: 60px;
+  border-top: 1px solid #EAEAEA;
+  line-height: 60px;
+  color: #aaa;
+}
+#hezuo a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 13px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#hezuo .login_1 {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: 0px -35px;
+}
+#hezuo .login_1:hover {
+  background-position: 0px -86px;
+}
+#hezuo .login_2 {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -50px -35px;
+}
+#hezuo .login_2:hover {
+  background-position: -50px -86px;
+}
+#hezuo .login_3 {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -102px -35px;
+}
+#hezuo .login_3:hover {
+  background-position: -102px -86px;
+}
+#hezuo .login_4 {
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -152px -35px;
+}
+#hezuo .login_4:hover {
+  background-position: -152px -86px;
+}
+
+#login_erweima {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: 0px -230px;
+  cursor: pointer;
+}
+
+#register_main {
+  background: url(../img/img-login-register/register_bg.jpg) repeat-x scroll left top;
+  padding-top: 70px;
+  height: 600px;
+  position: relative;
+}
+
+#register_box {
+  position: absolute;
+  left: 180px;
+  top: 73px;
+  width: 990px;
+  height: 500px;
+  background: #fff;
+  -webkit-box-shadow: -2px 5px 5px #eaeaea;
+  -moz-box-shadow: -2px 5px 5px #eaeaea;
+  border: 2px solid #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 69px 307px 0 279px;
+}
+#register_box .regist {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#register_box .regist span {
+  float: left;
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  color: #666666;
+}
+#register_box .regist div {
+  border: 1px solid #999999;
+  float: right;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+}
+#register_box .regist div i {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 8px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -50px 0;
+}
+#register_box .regist div input {
+  border: 0;
+  width: 177px;
+  height: 40px;
+  padding-right: 80px;
+}
+#register_box .regist2 {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#register_box .regist2 span {
+  float: left;
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  color: #666666;
+}
+#register_box .regist2 div {
+  border: 1px solid #999999;
+  float: right;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+}
+#register_box .regist2 div i {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 8px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -426px 0;
+}
+#register_box .regist2 div input {
+  border: 0;
+  width: 177px;
+  height: 40px;
+}
+#register_box .regist2 div #yanzhengma {
+  float: right;
+  width: 80px;
+  text-align: center;
+  line-height: 40px;
+  font-style: italic;
+}
+#register_box .regist3 {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#register_box .regist3 span {
+  float: left;
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  color: #666666;
+}
+#register_box .regist3 div {
+  border: 1px solid #999999;
+  float: right;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+}
+#register_box .regist3 div i {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 8px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -264px 0;
+}
+#register_box .regist3 div input {
+  border: 0;
+  width: 177px;
+  height: 40px;
+  padding-right: 80px;
+}
+#register_box .regist4 {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#register_box .regist4 span {
+  float: left;
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  color: #666666;
+}
+#register_box .regist4 div {
+  border: 1px solid #999999;
+  float: right;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+}
+#register_box .regist4 div i {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 8px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -83px 0;
+}
+#register_box .regist4 div input {
+  border: 0;
+  width: 177px;
+  height: 40px;
+  padding-right: 80px;
+}
+#register_box .regist5 {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+#register_box .regist5 span {
+  float: left;
+  width: 66px;
+  height: 42px;
+  line-height: 42px;
+  text-align: right;
+  font-size: 16px;
+  color: #666666;
+}
+#register_box .regist5 div {
+  border: 1px solid #999999;
+  float: right;
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+}
+#register_box .regist5 div i {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-left: 9px;
+  margin-top: 9px;
+  margin-right: 8px;
+  background-image: url(../img/img-login-register/regLogin.png);
+  background-repeat: no-repeat;
+  background-position: -83px 0;
+}
+#register_box .regist5 div input {
+  border: 0;
+  width: 177px;
+  height: 40px;
+  padding-right: 80px;
+}
+#register_box .regist6 {
+  padding-left: 96px;
+}
+#register_box .regist6 input {
+  position: relative;
+  top: 2px;
+}
+#register_box .regist6 a {
+  color: #0066cc;
+}
+#register_box .regist6 a:hover {
+  text-decoration: underline;
+}
+#register_box .regist7 {
+  width: 302px;
+  height: 42px;
+  margin-top: 10px;
+  padding-left: 96px;
+}
+#register_box .regist7 input {
+  border: 0;
+  width: 302px;
+  height: 42px;
+  background: #e10303;
+  border-radius: 2px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#register_tishi {
+  display: block;
+  position: absolute;
+  left: 1034px;
+  top: 39px;
+  width: 116px;
+  height: 34px;
+  background: #fff;
+  color: #ff9900;
+  text-align: center;
+  line-height: 34px;
+  border: 2px solid #eaeaea;
+  border-bottom: none;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
