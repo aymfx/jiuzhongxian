@@ -671,4 +671,20 @@
   border-bottom-right-radius: 0;
 }
 
+#tishi1 {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  top: 91px;
+  left: 598px;
+  background: #99FF99;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*--------首页文件-----------------*/
 #topHeader{
     height: 27px;
@@ -451,6 +452,7 @@ $wine_h:485px;
     .regist{
         overflow: hidden;
         margin-bottom: 15px;
+        
         span{
             float: left;
             width: 66px;
@@ -695,4 +697,20 @@ $wine_h:485px;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius:0;
+}
+
+#tishi1{
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top:91px;
+    left:598px;
+    background: #99FF99;
+    border-radius: 5px;
 }
