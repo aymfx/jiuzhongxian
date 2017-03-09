@@ -22,7 +22,7 @@
 	 if($flag){
 	 	//插入用户注册的信息
 	 	$sql="insert into jiuxianwang.user ".
-	 "values(null,'".$iphone."'".",'".$password."','".$email."');";
+	 "values(null,'".$iphone."'".",'".$email."','".$password."');";
 	 $retval=mysql_query($sql,$conn);
 	 echo "注册成功";
 	 if(!$retval){
