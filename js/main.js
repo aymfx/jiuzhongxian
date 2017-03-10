@@ -6,12 +6,40 @@ require.config({
 })
 //主页面
 require(["jquery","index"],function($,fn1){
-				
-				//轮播图
+	
+				//初始化页面
+				fn1.init()
+
+				//轮播图--banner部分
 			  var $btn=$(".smallUl li");
 			  var  $img=$(".banner_bg li");
 			  var num=7;
 			  fn1.lunbo($img,$btn,num);
+			  
+			  
+			  //tab切换图--整箱hot
+			  var $btn1=$('.indexTabNav li');
+			  var $tab=$('.indexTabConWrap');
+			  fn1.tab($btn1,$tab);
+			  
+			  //侧边切换
+			  
+				var $btn1=$('.indexTabNewNav li');
+			  var $tab=$('.indexTabNewCon div');
+			  fn1.subtab($btn1,$tab);
+			  
+			  //侧边栏效果切换(滑动)
+			  var $btn1=$('.indexTuanList .bigUl');
+			  var $tab=$('.btnBg em');
+			  var num=0;
+			  fn1.subSlideTab($btn1,$tab,num);
+			  
+			  //侧边栏效果切换(滑动)
+			  var $btn1=$('.indexAdFocusWrap');
+			  var num=-268;
+			  var $tab=$('.btnBg2 em');
+			  fn1.subSlideTab($btn1,$tab,num);
+			  
 			  
 			  
 			

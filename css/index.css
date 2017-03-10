@@ -466,16 +466,16 @@
   filter: alpha(opacity=100);
 }
 
-.smallUl {
+#banner .smallUl {
   height: 20px;
-  margin: 0 auto;
+  left: 50%;
+  margin-left: -133px;
+  bottom: 30px;
   position: absolute;
   z-index: 21;
   text-align: center;
-  left: 534px;
-  top: 400px;
 }
-.smallUl li {
+#banner .smallUl li {
   background: #000;
   border-radius: 50%;
   box-shadow: 0 0 3px;
@@ -492,7 +492,7 @@
   text-align: center;
   overflow: hidden;
 }
-.smallUl li.on {
+#banner .smallUl li.on {
   background: #dd102e;
 }
 
@@ -509,24 +509,362 @@
   height: 500px;
   overflow: hidden;
 }
-#hot_shop #hot_left {
+
+#hot_left {
   width: 920px;
   height: 500px;
-  background: #9999FF;
   float: left;
+  background: #fff;
+  height: 499px;
 }
-#hot_shop #hot_right {
-  width: 272px;
-  height: 500px;
+
+.indexTabNav {
+  overflow: hidden;
+  height: 38px;
+  position: relative;
+}
+.indexTabNav li {
+  width: 182px;
+  height: 35px;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  color: #666666;
+  font-family: 微软雅黑;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-top: 2px solid #ececec;
+  background: #f9f9f9;
+}
+.indexTabNav .on {
+  border-top: 2px solid #cc0000;
+  border-bottom: 1px solid #fff;
+  height: 35px;
+  color: #cc0000;
+  line-height: 35px;
+  background: #fff;
+}
+.indexTabNav .n1 {
+  left: 0;
+}
+.indexTabNav .n2 {
+  left: 184px;
+}
+.indexTabNav .n3 {
+  left: 368px;
+}
+.indexTabNav .n4 {
+  left: 552px;
+  width: 183px;
+}
+.indexTabNav .n5 {
+  left: 736px;
+  width: 182px;
+}
+
+.indexTabConWrap {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 460px;
+  overflow: hidden;
+  position: relative;
+}
+
+.indexTabCon {
+  height: 442px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.indexTabCon li {
+  float: left;
+  width: 174px;
+  margin-top: 20px;
+}
+
+.indexTabPic {
+  padding: 0 11px;
+  width: 160px;
+  padding: 0 7px;
+  position: relative;
+  z-index: 1;
+}
+.indexTabPic a {
+  COLOR: #666;
+  TEXT-DECORATION: none;
+}
+.indexTabPic p {
+  background: url(../img/imgsindex/TagBg.png) no-repeat 0 0;
+  position: absolute;
+  width: 45px;
+  height: 55px;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+.indexTabPic p span {
+  display: inline-block;
+  width: 43px;
+  height: 28px;
+  font-size: 12px;
+  margin-top: 7px;
+  padding: 0 1px;
+  overflow: hidden;
+  line-height: 14px;
+}
+
+.indexTabTit {
+  width: 170px;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 6px;
+}
+.indexTabTit a {
+  COLOR: #666;
+  TEXT-DECORATION: none;
+}
+
+.indexTabPrice {
+  width: 170px;
+  padding: 0 2px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.indexTabPrice strong {
+  font-family: "微软雅黑";
+  font-size: 15px;
+  color: #CD0100;
+  font-weight: normal;
+}
+
+#hot_right {
   background: #99FF99;
   float: right;
+  width: 270px;
+  float: right;
+  height: 500px;
+}
+
+.indexTabNew {
+  width: 270px;
+  height: 140px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.indexTabNewNav {
+  height: 35px;
+  position: relative;
+}
+.indexTabNewNav li {
+  font-size: 16px;
+  font-family: 微软雅黑;
+  color: #666666;
+  text-align: center;
+  width: 134px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ececec;
+  border-image: initial;
+  background: #f9f9f9;
+}
+.indexTabNewNav .s1 {
+  left: 0;
+}
+.indexTabNewNav .s2 {
+  left: 135px;
+  width: 133px;
+}
+.indexTabNewNav .on {
+  border-top: 2px solid #c41921;
+  border-bottom: 1px solid #fff;
+  height: 34px;
+  color: #cc0000;
+  line-height: 33px;
+  background: #fff;
+}
+
+.indexTabNewCon {
+  border: 1px solid #ececec;
+  border-top: none;
+  height: 94px;
+  padding-top: 10px;
+}
+
+.indexTabNewList {
+  width: 258px;
+  margin: 0 auto;
+}
+.indexTabNewList li {
+  float: left;
+  width: 114px;
+  margin-left: 10px;
+  display: inline;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 28px;
+}
+.indexTabNewList li a {
+  color: #666;
+}
+
+.indexTuanBox {
+  width: 268px;
+  height: 157px;
+  border: 1px solid #ececec;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.indexTuanList {
+  width: 268px;
+  height: 157px;
+  overflow: hidden;
+  position: relative;
+}
+.indexTuanList ul {
+  width: 10000px;
+  height: 157px;
+  position: absolute;
+  left: -268px;
+  top: 0;
+}
+.indexTuanList ul li {
+  float: left;
+  width: 268px;
+  height: 157px;
+  position: relative;
+}
+.indexTuanList ul li a {
+  COLOR: #666;
+}
+
+.indexTuanBox .btnBox {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  top: 133px;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 0;
+}
+.indexTuanBox .btnBox .btnBg {
+  display: inline-block;
+  height: 17px;
+}
+.indexTuanBox .btnBox .btnBg em {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.indexTuanBox .btnBox .btnBg .on {
+  background: #6d81ae;
+}
+
+.indexAdFocus {
+  width: 268px;
+  height: 178px;
+  border: 1px solid #ececec;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.indexAdFocusList {
+  width: 268px;
+  height: 178px;
+  overflow: hidden;
+  position: relative;
+}
+
+.indexAdFocusList .indexAdFocusWrap {
+  width: 10000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.indexAdFocusWrap li {
+  float: left;
+  width: 268px;
+  height: 178px;
+}
+.indexAdFocusWrap li a {
+  COLOR: #666;
+  TEXT-DECORATION: none;
+}
+
+.indexAdFocus .btnBox {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  top: 133px;
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 0;
+}
+
+.btnBg2 {
+  display: inline-block;
+  height: 12px;
+  font-size: 0;
+}
+.btnBg2 em {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btnBg2 .on {
+  background: #6d81ae;
 }
 
 #festival {
-  width: 100%;
   height: 130px;
-  background: pink;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
   margin-top: 20px;
+  background: url("http://img08.jiuxian.com/bill/2017/0310/737c2db3ce194f5eb47f0f911c3f3f63.jpg") no-repeat top center scroll;
 }
 
 #cheap {
@@ -580,10 +918,95 @@
 }
 
 #boutique {
-  width: 100%;
-  height: 134px;
-  background: #FFFF99;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.titlebox {
+  height: 40px;
+  line-height: 40px;
+  background: #f9f9f9;
+  padding: 0 3px;
+}
+
+.jpTitle {
+  float: left;
+  padding-left: 2px;
+}
+.jpTitle i {
+  display: inline-block;
+  width: 7px;
+  height: 18px;
+  background: #ff9000;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.jpTitle span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  color: #333333;
+  font-family: 微软雅黑;
+  margin-left: 10px;
+}
+
+.rightNavBox {
+  float: right;
+  display: inline;
+  height: 9px;
   margin-top: 20px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.rightNavBox li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+  background: #cccccc;
+  margin-left: 14px;
+  cursor: pointer;
+  float: left;
+}
+
+.goods_menu {
+  border: 1px solid #ececec;
+  background: #fff;
+  padding: 4px 4px 0 4px;
+}
+
+.goods_mnudl {
+  overflow: hidden;
+  zoom: 1;
+  width: 1190px;
+}
+.goods_mnudl dt {
+  float: left;
+  border-bottom: 4px solid #fff;
+  overflow: hidden;
+  width: 92px;
+  height: 60px;
+}
+.goods_mnudl dd {
+  float: left;
+  padding: 15px 2px 15px 3px;
+  line-height: 25px;
+  height: 50px;
+  width: 394px;
+  color: #afafaf;
+  overflow: hidden;
+  border-bottom: 4px solid #fff;
+  position: relative;
+}
+.goods_mnudl dd a:hover {
+  color: #E10303;
+}
+
+.goods_mnudl dd.goods_mnudd1, .goods_mnudl dd.goods_mnudd2 {
+  padding: 5px 8px;
+  width: 463px;
 }
 
 #footer_i {
