@@ -4,6 +4,34 @@ require.config({
 	  	"jquery":"jquery-1.11.1.min"
 	  }
 })
+//主页面
+require(["jquery","index"],function($,fn1){
+				
+				//轮播图
+			  var $btn=$(".smallUl li");
+			  var  $img=$(".banner_bg li");
+			  var num=7;
+			  fn1.lunbo($img,$btn,num);
+			  
+			  
+			
+		    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //注册验证
 require(["jquery","register"],function($,fn1){
