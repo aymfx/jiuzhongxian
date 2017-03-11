@@ -597,10 +597,18 @@ define(['jquery'],function(){
                     scrollTop:0
                 },700)
             })
-		
-		
-		
-		
+	}
+	
+	Index.prototype.inputwd=function($wd,$search){
+		$wd.on('keyup',function(){
+			var script1 = document.createElement('script');
+            script1.src = 'http://list.jiuxian.com/assKeyWords.htm?t=1489239431658&callback=taobao&wd='+$wd.val();
+            document.body.appendChild(script1);
+			if($wd.val().trim()==''){
+				$search.css('display','none');
+			}
+		})
+ 
 	}
 	
 	

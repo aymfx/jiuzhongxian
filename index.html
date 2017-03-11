@@ -53,10 +53,13 @@
 				<div class="searchHome">
 					<form action="" method="get">
 						<input id="wd" class="search-form" type="text"  value="" maxlength="50">
-						<input class="search-btn" type="submit" id="home_sousuo" value="搜&nbsp;索">
+					  	<input class="search-btn" type="submit" id="home_sousuo" value="搜&nbsp;索">
 						<input id="area"  type="hidden" value="">
+						<div id="search" style="display: none;">
+						</div>
 					</form>
 				</div>
+				
 				<div class="hotWords" style="" name="__home_sousuoreci">            	
 						<p>	
 						<a class="on" href="#" target="_blank">老酒特卖会场<s></s></a>         
@@ -909,7 +912,24 @@
 <div class="floorFive"><a class="floorFiveOn floorOn" href="javascript:;" hname=" 食品 " name="5F" on="0" w="70" style="display: none; overflow: hidden; width: 30px;"> 食品 </a><a class="floorFiveBg floorBg" href="javascript:;" style="opacity: 1;"><i class="newIndexIcon"></i></a></div>
 <span class="floorBack"><i class="newIndexIcon" style="background-position: -74px -190px;"></i></span>
 	</div>
-
-		
+	<script type="text/javascript">
+		function taobao(data) {
+        var $search= document.getElementById('search');
+        
+        var d = data.resultList; //数组
+        if (d.length != 0) {
+            var str = '<ul>';
+            for (var i = 0; i < d.length; i++) {
+                str += '<li><a href="https://s.taobao.com/search?q=' + d[i].url + '">' + d[i].name + '</a></li>';
+            }
+            str+='</ul>';
+            console.log($search);
+           $search.innerHTML=str;
+            $search.style.display="block";
+        }else{
+            $search.style.display="none";
+        }
+    }
+	</script>
 	</body>
 </html>

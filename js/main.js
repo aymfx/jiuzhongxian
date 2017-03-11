@@ -161,6 +161,12 @@ require(["jquery","index"],function($,fn1){
 			  var $fixDiv=$('.fixDiv div');
 			  fn1.louti($louti,$fixDiv);
 			  
+			  //password提示框
+			  $wd=$('#wd');
+			  $search=$('#search');
+			  fn1.inputwd($wd,$search);
+			  
+			  
 			  
 			  
 			  

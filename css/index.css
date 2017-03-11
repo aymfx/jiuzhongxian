@@ -183,9 +183,6 @@
   height: 125px;
 }
 
-.header_box {
-  overflow: hidden;
-}
 .header_box .headerLogo {
   float: left;
   margin-top: 30px;
@@ -289,6 +286,37 @@
   color: #fff;
   font-weight: 600;
   box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchHome {
+  position: position;
+}
+
+#search {
+  position: absolute;
+  width: 435px;
+  height: 200px;
+  top: 30px;
+  left: 0px;
+  margin: 10;
+  font: 12px/24px "";
+  color: #000000;
+  background: #fff;
+  border: 1px solid #666;
+  padding-left: 10px;
+}
+#search a {
+  width: 100px;
+}
+#search a:hover {
+  color: #FF99FF;
+}
+
+#serach li {
+  list-style: none;
+  font-size: 19px;
+  margin: 10px;
+  line-height: 24px;
 }
 
 .categoryBox {
