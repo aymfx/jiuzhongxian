@@ -40,6 +40,135 @@ require(["jquery","index"],function($,fn1){
 			  var $tab=$('.btnBg2 em');
 			  fn1.subSlideTab($btn1,$tab,num);
 			  
+			  //获取cheap数据
+			  var $box=$('.receBoxs');
+			  fn1.cheap($box);
+			  
+			  //cheap切换
+			  var $btn=$(".rightNavBox span");
+			  var $cheap=$('.receBoxs');
+			  var $left=$('.raceLeft');
+			  var $right=$('.raceRight');
+			  fn1.cheaptab($btn,$cheap,$left,$right);
+			  
+			  
+			  
+			  
+			  //recommend的切换
+			 	var  $btn=$('.titieBox li');
+			 	var  $titleSlider=$('.titleSlider')
+			 	var  $btnlr=$('.optionsID');
+			  var $logoAll=$('.logoAll');
+			  var $btnImg=$('.logoFirstbd');
+			  fn1.recommend($btn,$titleSlider,$btnlr,$logoAll,$btnImg);
+			  
+			  //floor1
+			  
+			  //第一部分
+			  var $bigUl=$('#tab1 .bigUl');
+			  var $btn=$('#t1 .btnBg em');
+			  var $num1=1;
+			  fn1.floorTab($bigUl,$btn,$num1);
+			  
+			  //第二部分取数据
+			  var $imgs=$('#f1 .spiritList ');
+			  var table='bjg'
+			  fn1.floorImgs($imgs,table);
+			  
+			  //取数据第三部分
+			  //第一步请求数据..控制数据
+			  var $list1=$('#b1');
+			  var table='f1';
+			  var $imgss=$('#b1');
+			   var $bt=$('#s1 a');
+			  fn1.bottomImgs($list1,table,$imgss,$bt,4);
+			 
+			  
+			  
+			  
+			  //floor2
+			  
+			  //第一部分
+			  var $bigUl=$('#tab2 .bigUl');
+			  var $btn=$('#t2 .btnBg em');
+			  var $num2=2;
+			  fn1.floorTab($bigUl,$btn,$num2);
+			  
+			  //第二部分取数据
+			  var $imgs=$('#f2 .spiritList1 ');
+			  var table='ptjg'
+			  fn1.floorImgs($imgs,table);
+			  
+			  //取数据第三部分
+			  
+			  var $list1=$('#b2');
+			  var table='f2';
+			  var $imgss=$('#b2');
+			   var $bt=$('#s2 a');
+			  fn1.bottomImgs($list1,table,$imgss,$bt,5);
+			  
+			  
+			  
+			  
+			  
+			  
+			  //floor3
+			  
+			  //第一部分
+			  var $bigUl=$('#tab3 .bigUl');
+			  var $btn=$('#t3 .btnBg em');
+			  var $num3=2;
+			  fn1.floorTab($bigUl,$btn,$num2);
+			  
+			  //第二部分取数据
+			  var $imgs=$('#f3 .spiritList3 ');
+			  var table='yjg'
+			  fn1.floorImgs($imgs,table);
+			  
+			  //floor4
+			  
+			  //第一部分
+			  var $bigUl=$('#tab4 .bigUl');
+			  var $btn=$('#t4 .btnBg em');
+			  var $num4=2;
+			  fn1.floorTab($bigUl,$btn,$num4);
+			  
+			  //第二部分取数据
+			  var $imgs=$('#f4 .spiritList4 ');
+			  var table='pjg'
+			  fn1.floorImgs($imgs,table);
+			  
+			  //floor5
+			  
+			  //第一部分
+			  var $bigUl=$('#tab5 .bigUl');
+			  var $btn=$('#t5 .btnBg em');
+			  var $num5=2;
+			  fn1.floorTab($bigUl,$btn,$num5);
+			  //第二部分取数据
+			  var $imgs=$('#f5 .spiritList5 ');
+			  var table='food';
+			  fn1.floorImgs($imgs,table);
+			  
+			  
+			  //侧边回到顶部
+			  $top=$('.gotoTop i');
+			  fn1.scroll($top);
+			  
+			  //楼层
+			  var $louti=$('.louti');
+			  
+			  var $fixDiv=$('.fixDiv div');
+			  fn1.louti($louti,$fixDiv);
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
 			  
 			  
 			
