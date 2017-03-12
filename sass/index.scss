@@ -1250,9 +1250,7 @@ $wine_h:485px;
 
 .topTenWrap{
     height: 161px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
+  
 }
 .hotWordBox{
     float: left;
@@ -3236,4 +3234,726 @@ li.on{
     position: absolute;
     left: 8px;
     top: 6px;
+}
+
+
+//details 产品详情页
+.wc1200{
+    margin: 0 auto;
+    width: 1200px;
+}
+.dTop{
+    height: 70px;
+    overflow: hidden;
+    padding-top: 10px;
+    
+}
+.dGuide {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.dGuide a {
+    color: #666;
+}
+.dGuide i {
+    color: rgb(153, 153, 153);
+    font-style: normal;
+    font-family: 宋体;
+    padding: 0px 8px;
+}
+.dGuide a:hover, .dGuide .d-cur{
+    color: #c33;
+}
+
+.d-left {
+    width: 200px;
+    float: left;
+    clear: both;
+}
+.d-box {
+    border: 1px solid #f2f2f2;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.d-box .title {
+    height: 28px;
+    background: #fafafa;
+    padding: 0 8px;
+    font-family: "Microsoft YaHei";
+}
+.d-box .title i {
+    display: block;
+    background: #c33;
+    width: 3px;
+    height: 12px;
+    float: left;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.d-box .title span {
+    font-size: 12px;
+    color: #333;
+    float: left;
+    line-height: 28px;
+    padding-left: 5px;
+}
+.d-con {
+    background: #fff;
+    padding: 10px 0;
+}
+.twoList {
+    padding-left: 15px;
+}
+.twoList li {
+    width: 90px;
+    float: left;
+    line-height: 24px;
+}
+.twoList li a {
+    display: block;
+    width: 48px;
+    height: 24px;
+    color: #666;
+    font-family: "Microsoft YaHei";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.topTen_box {
+    padding: 0 10px 0 10px;
+}
+.topTenTab {
+    width: 100%;
+    overflow: hidden;
+    height: 20px;
+}
+.topTenTab ul {
+    width: 105%;
+}
+.topTenTab li.cur {
+    background: #c33;
+    color: #fff;
+}
+.topTenTab li {
+    height: 20px;
+    line-height: 20px;
+    background: #f2f2f2;
+    float: left;
+    width: 56px;
+    color: #999;
+    font-family: "宋体";
+    margin-right: 5px;
+    display: inline;
+    text-align: center;
+    cursor: pointer;
+}
+.topTenList li {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10px;
+    margin: 10px 0;
+    float: left;
+}
+.topTenList li i.three {
+    background: #c33;
+}
+.topTenList li i {
+    font-style: normal;
+    display: block;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    font-family: "Microsoft YaHei";
+    background: #ccc;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 1px;
+    top: 0;
+    z-index: 100;
+}
+.topTenList li .pic {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.topTenList li .right {
+    width: 103px;
+    float: right;
+    padding-left: 5px;
+}
+.topTenList li .right .name {
+    font-family: "宋体";
+    height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+}
+.topTenList li .right .price {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #c33;
+    margin-top: 5px;
+}
+.recomList li .pic {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.recomList li .name {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Microsoft YaHei";
+}
+.recomList li .price {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #c33;
+}
+.threeList li{
+    float: left;
+    margin: 5px;
+}
+.d-right {
+    width: 990px;
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+.d-header-fix {
+    position: fixed;
+    border-bottom: 1px solid #ededed;
+    top: 0;
+    left: 50%;
+    margin-left: -390px;
+    _position: absolute;
+    _left: 0;
+    _margin-left: 0;
+    _border-bottom: 0;
+    z-index: 1000;
+}
+.d-header {
+    height: 47px;
+    background: #fff;
+    border-top: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    width: 988px;
+    z-index: 2;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.d-tab {
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.d-tab li.on {
+    line-height: 44px;
+    height: 46px;
+    background: 0;
+    padding: 0 24px;
+    border-right: 1px solid #ededed;
+    border-top: 2px solid #c33;
+    border-left: 1px solid #ededed;
+    border-bottom: 0;
+    color: #c33;
+}
+.d-tab li {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    margin-left: -1px;
+    padding: 0 25px;
+    position: relative;
+    background: url(../img/detailsImgs/line.jpg) no-repeat right center;
+}
+.inCart {
+    background: #c33;
+    width: 110px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 0;
+    cursor: pointer;
+}
+.inCart i {
+    background-position: -149px -63px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+.dIcon {
+    background: url(../img/detailsImgs/d-icon.png) no-repeat 0 0;
+    _background: url(../img/detailsImgs/d-icon.png) no-repeat 0 0;
+}
+.inCart span {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.detailCode {
+    color: #999;
+    cursor: pointer;
+    float: right;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    height: 47px;
+    line-height: 47px;
+    padding-right: 46px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+    z-index: 10;
+}
+
+.d-right .t {
+    padding-top: 48px;
+}
+.proInfo {
+    border: 1px solid #f2f2f2;
+    _width: 988px;
+}
+.intrBox {
+    background-color: #fbfbfb;
+    padding: 15px 28px;
+    width: 932px;
+}
+.intrList {
+    width: 100%;
+    overflow: hidden;
+}
+.intrList li {
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.intrList li .icon7 {
+    background-position: -120px 0;
+}
+.intrList li span {
+    float: left;
+    display: block;
+    padding-left: 5px;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Microsoft YaHei";
+    color: #666;
+}
+.linkM {
+    padding: 20px;
+    text-align: center;
+}
+area {
+    display: inline;
+    cursor: pointer;
+}
+.descBox {
+    padding: 20px;
+    background: #fff;
+}
+.infoBox {
+    margin-bottom: 10px;
+}
+.infoBox h3 {
+    height: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Microsoft YaHei";
+}
+.infoBox h3 i {
+    width: 4px;
+    height: 4px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    background: #ccc;
+    overflow: hidden;
+}
+.infoBox h3 span {
+    display: inline-block;
+    float: left;
+    padding-left: 6px;
+}
+.infoImg {
+    text-align: center;
+}
+.corrBox {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 28px;
+}
+.corrBox i {
+    background-position: -47px 0;
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 17px;
+}
+.corrBox span {
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+    color: #666;
+}
+.introShow {
+    width: 440px;
+    padding-bottom: 18px;
+    float: left;
+}
+.introInfo {
+    float: left;
+    width: 548px;
+    min-height: 533px;
+    padding: 20px 0 10px 10px;
+    border-right: 0;
+}
+.introInfo .comName {
+    padding: 0 10px 5px;
+}
+.introInfo .comName h1 {
+    width: 528px;
+    font-size: 16px;
+    min-height: 20px;
+    line-height: 20px;
+}
+.introInfo .comSummary {
+    background: #fafafa;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+}
+.infoWrap .infoItems {
+    width: 528px;
+    float: left;
+
+    line-height: 30px;
+}
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #999;
+    padding-right: 28px;
+}
+.priJXBox .infoPrijx {
+    color: #999;
+    font-family: "Microsoft YaHei";
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.infoWrap .infoItems {
+    float: left;
+    width: 528px;
+    line-height: 30px;
+}
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #999;
+    padding-right: 28px;
+}
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.priceBox .infoPri .pri {
+    color: #c33;
+    font-family: "Microsoft YaHei";
+}
+
+.priceBox .infoPri span {
+    display: inline-block;
+    float: left;
+    height: 30px;
+}
+.priceBox .infoPri .pri em {
+    font-size: 14px;
+}
+.priceBox .infoPri .pri strong {
+    font-size: 26px;
+}
+.mobileBay {
+    width: 104px;
+    height: 26px;
+    position: absolute;
+    right: 12px;
+    top: 142px;
+    left:426px;
+    z-index: 1;
+}
+.salesScoreGold {
+    border-bottom: 1px dotted #d6d6d6;
+}
+.salesScoreGold ul {
+    padding-left: 70px;
+    height: 38px;
+    line-height: 38px;
+}
+.salesScoreGold ul li {
+    float: left;
+    width: 30%;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.salesScoreGold ul li span {
+    color: #999;
+    margin: 0 8px 0 6px;
+}
+.salesScoreGold ul li em {
+    color: #999;
+}
+.salesScoreGold ul .comScore .ssg {
+    background-position: -214px 0;
+}
+.salesScoreGold ul .comGold .ssg {
+    background-position: -232px 1px;
+}
+.salesScoreGold ul li .point {
+    background-position: -251px -18px;
+}
+
+.salesScoreGold ul li .point {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    background-position: -251px 0;
+    margin-left: 5px;
+}
+.introInfo .infoWrap {
+    padding: 0px;
+    margin-bottom: 71px;
+}
+.infoWrap .infoItems {
+    width: 528px;
+    margin-top: 10px;
+}
+.infoItems .infoTit {
+    float: left;
+    width: 36px;
+    color: #999;
+    padding-right: 28px;
+}
+.cityBox .infoCity {
+    position: relative;
+    z-index: 1;
+}
+
+.infoItems .infoCon {
+    float: left;
+    width: 464px;
+}
+.cityBox .infoCity .citySelect {
+    position: relative;
+    z-index: 2;
+}
+.citySelect .dOrder-city-sel {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding-left: 6px;
+    position: relative;
+    z-index: 2;
+    font-size: 0;
+}
+.citySelect .dOrder-city-sel b {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+    padding-right: 5px;
+    position: relative;
+    top: -5px;
+}
+.citySelect .dOrder-city-sel b {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+    padding-right: 5px;
+}
+.citySelect .dOrder-city-sel i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -139px -30px;
+}
+.citySelect strong {
+    display: inline-block;
+    padding-left: 8px;
+}
+.h5_dptctdrp {
+    margin-bottom: 8px;
+    line-height: 20px;
+    font-size: 100%;
+    font-weight: normal;
+    position: relative;
+    z-index: 22;
+}
+.h5_dptctdrp a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.bayBtnBox .infoBuy .buyBtn:hover {
+    text-decoration: none;
+}
+
+.bayBtnBox .infoBuy .buyBtn-cart {
+    border: 1px solid #fcc;
+    background: #c33;
+    color: #fff;
+    margin-top: 36px;
+    margin-left: 47px;
+}
+
+.bayBtnBox .infoBuy .buyBtn {
+    display: inline-block;
+    width: 166px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    margin-right: 12px;
+}
+.bayBtnBox .infoBuy .buyBtn:hover {
+    text-decoration: none;
+}
+
+.bayBtnBox .infoBuy .buyBtn-cart {
+    border: 1px solid #fcc;
+    background: #c33;
+    color: #fff;
+}
+
+.introOther {
+    float: left;
+    width: 200px;
+}
+.introLogo {
+    text-align: center;
+    padding: 0 15px;
+}
+.introP {
+    padding: 30px 0 20px;
+    border-bottom: 1px dotted #d7d7d7;
+}
+.jxzy {
+    font-style: normal;
+    display: block;
+    width: 54px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #cf000e;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+.introSaf {
+    padding-left: 35px;
+}
+.introSaf ul li {
+    padding-top: 14px;
+    line-height: 22px;
+}
+.introSaf ul li .safNam {
+    width: 146px;
+    position: relative;
+    height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.introSaf ul li .safNam strong {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-family: "宋体";
+    margin-left: 6px;
+}
+.introSaf ul li .safCon {
+    width: 120px;
+    position: relative;
+    padding-left: 26px;
+    color: #999;
+    height: 22px;
+    overflow: hidden;
+}
+.cusBgBox {
+    padding-left: 35px;
+}
+.cusBg {
+    height: 28px;
+    line-height: 28px;
+    background: #fafafa;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #e9e9e9;
+    font-size: 0;
+    width: 104px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #666;
+    font-family: "宋体";
+}
+.dh1 i {
+    -webkit-animation: upDown ease-in .8s infinite;
+    -moz-animation: upDown ease-in .8s infinite;
+    -ms-animation: upDown ease-in .8s infinite;
+    -o-animation: upDown ease-in .8s infinite;
+    animation: upDown ease-in .8s infinite;
+    background: url(../img/detailsImgs/cus-1.png) no-repeat;
+    position: relative;
+    top: 2px;
+}
+
+.cusBg i {
+    width: 17px;
+    height: 22px;
+}
+.cusBg i, .cusBg span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cusBg span {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
 }
