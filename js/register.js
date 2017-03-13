@@ -73,7 +73,7 @@ define(["jquery"],function(){
 		  	  	    		},1000)
 		  	  	    	},
 		  	  	    	error:function(){
-		  	  	    		alert("注册失败");
+		  	  	    		alert("注册失败,用户名或者邮箱存在");
 		  	  	    	}
 		  	  	    })
 	   }

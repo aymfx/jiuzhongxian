@@ -4049,3 +4049,699 @@ area {
     color: #666;
     margin-left: 5px;
 }
+//cart购物车
+.topHeaderWrap {
+    width: 100%;
+    height: 27px;
+    background: #f6f6f6;
+}
+.topHeader {
+    width: 1000px;
+    height: 27px;
+    line-height: 27px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 104;
+}
+.topCollect {
+    float: left;
+    height: 27px;
+    position: relative;
+    z-index: 100;
+    width: 400px;
+    overflow: hidden;
+}
+.topCollect ul li {
+    float: left;
+    margin-right: 5px;
+}
+.topRight {
+    float: right;
+    height: 27px;
+    position: relative;
+}
+.topRight li {
+    float: left;
+    height: 27px;
+    position: relative;
+    z-index: 9998;
+    a{
+        margin-right: 10px;
+    }
+}
+.topRight .hotTel {
+    padding-left: 5px;
+}
+.topRight li span {
+    float: left;
+}
+.topRight .hotTel strong {
+    color: #ca1926;
+    font-style: italic;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    padding-left: 5px;
+}
+
+.midHeader {
+    background: #fff;
+    height: 90px;
+    width: 100%;
+}
+.midHeaderBox {
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+    z-index: 102;
+}
+.jxwLogo {
+    float: left;
+    height: 63px;
+    margin-top: 20px;
+    width: 257px;
+    
+}
+.jxwLogo .jxwIndex {
+    float: left;
+    width: 140px;
+    height: 63px;
+}
+.bayProcess {
+    float: right;
+    margin-top: 25px;
+}
+.bayProcess .proPic {
+    width: 396px;
+    height: 27px;
+    background: url(../img/cartImgs/ch_icon.png) no-repeat;
+    margin: 0 26px 0 16px;
+}
+.bayProcess .proTex {
+    width: 438px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 8px;
+}
+.bayProcess .proTex .on {
+    color: #666;
+}
+.bayProcess .proTex span {
+    color: #aaa;
+    margin-right: 117px;
+}
+.bayProcess .proTex span {
+    color: #aaa;
+    margin-right: 117px;
+}
+
+.shoppingCart {
+    width: 1000px;
+    margin: 20px auto 0;
+    font-family: "宋体";
+    position: relative;
+}
+.cartEmptyBox {
+    height: 320px;
+    border: 1px solid #e4e4e4;
+    background: #fafcff;
+    margin-top: 5px;
+}
+.cartEmptyCon {
+    padding: 55px 0 0 296px;
+}
+.cart_container{
+    width: 998px;
+    margin: 0 auto;
+}
+.cartEmptyCon .empTit {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #ff9933;
+    font-family: "Microsoft YaHei";
+    position: relative;
+}
+.cartEmptyCon .empTit i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: -140px -238px;
+    position: absolute;
+    left: -78px;
+    top: 0;
+}
+.cartIcon {
+    background: url(../img/cartImgs/cartIcon-gw-24.png) no-repeat;
+    _background: url(../img/cartImgs/cartIcon-gw-24.png) no-repeat;
+}
+.cartEmptyCon {
+        padding: 55px 0 0 296px;
+}
+
+.cartEmptyCon .empPro {
+    line-height: 30px;
+    color: #999;
+    padding-top: 6px;
+}
+.cartEmptyCon .empPro a {
+    color: #0066cc;
+    padding: 0 5px;
+}
+.cartEmptyCon .empSearch {
+    width: 364px;
+    height: 36px;
+    position: relative;
+    margin-top: 16px;
+}
+.cartEmptyCon .empSearch input {
+    width: 318px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #e4e4e4;
+    padding: 0 34px 0 10px;
+}
+.cartEmptyCon .empSearch span {
+    height: 34px;
+    line-height: 34px;
+    width: 120px;
+    color: #ccc;
+    position: absolute;
+    left: 11px;
+    top: 1px;
+}
+.goodName a{
+    height: 42px;
+    display: inline-block;
+}
+.cartEmptyCon .empSearch i {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-position: -84px -238px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    cursor: pointer;
+}
+.cart_list{
+    float: left;
+    width: 980px;
+    height: 270px;
+    margin: 0 6px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+.cart_list li {
+    float: left;
+    width: 195px;
+   
+}
+.cart_list li .imgBox {
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+}
+.cart_list li .imgBox {
+    width: 160px;
+    height: 160px;
+}
+.cart_list li .goodInfo {
+    width: 160px;
+    padding-top: 10px;
+}
+.cart_list li .goodInfo p {
+    width: 160px;
+}
+.cart_list li .goodInfo p {
+    width: 160px;
+}
+.goodInfo .goodPrice {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.goodInfo .goodPrice b {
+    color: #cc0000;
+    font-family: "Microsoft YaHei";
+}
+.recommenCon li .goodInfo p {
+    width: 160px;
+}
+
+.goodInfo .goodBuy {
+    height: 29px;
+}
+.goodInfo .goodBuy a {
+    display: block;
+    background: #fff;
+    width: 108px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 0;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+.goodInfo .goodBuy a i {
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 -269px;
+    width: 14px;
+    height: 12px;
+}
+.goodInfo .goodBuy a span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #cc0000;
+    margin-left: 5px;
+}
+.goodInfo .goodBuy a {
+    display: block;
+    background: #fff;
+    width: 108px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 0;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+.recommenCon li .goodInfo p {
+    width: 160px;
+}
+
+.goodInfo .goodBuy {
+    height: 29px;
+}
+.recommenCon li .imgBox {
+    width: 160px;
+    height: 160px;
+}
+.myCartTitle {
+    height: 48px;
+}
+.myCartTitle .text {
+    float: left;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: normal;
+    color: #000;
+    font-family: "Microsoft YaHei";
+}
+.cartHeader {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    border-left: 2px solid #e6393d;
+    background: #fbfbfb;
+}
+.cartHeaderCon {
+    float: left;
+    text-align: center;
+}
+.goodHeadCheck {
+    width: 58px;
+    text-align: left;
+    padding-left: 9px;
+}
+.goodHeadCheck .checkAll {
+    margin: 12px 10px 0 0;
+    _margin-top: 7px;
+    float: left;
+}
+.goodHeadCheck span {
+    float: left;
+}
+.goodHeadName {
+    width: 366px;
+    text-align: left;
+    text-indent: 60px;
+}
+.goodHeadPrice {
+    width: 102px;
+}
+.goodHeadGold {
+    width: 102px;
+}
+.goodHeadNum {
+    width: 120px;
+}
+.goodHeadTotal {
+    width: 120px;
+}
+.goodHeadOperate {
+    width: 118px;
+}
+.cartTableBox {
+    border-bottom: none;
+    margin-top: 15px;
+}
+.pubHeader {
+    height: 36px;
+    padding-left: 11px;
+}
+.shopAll {
+    height: 16px;
+    line-height: 16px;
+    float: left;
+    padding-top: 10px;
+}
+.shopAll input {
+    width: 13px;
+    height: 13px;
+    overflow: hidden;
+    display: block;
+    margin-top: 2px;
+}
+.shopAll .jxzy {
+    background-position: 0 0;
+    width: 16px;
+    height: 16px;
+}
+.shopAll span {
+    font-weight: bolder;
+    color: #666666;
+}
+.freePosBox {
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    color: #777;
+}
+.shopIcon {
+    background: url(../img/cartImgs/shopIcon.png) no-repeat 0 0;
+}
+.cart-tabBox {
+    width: 998px;
+    height: auto;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 2px solid #b7b7b7;
+}
+.cart-tabBox .cartTab {
+    width: 998px;
+}
+.cartTab .cTab-check {
+    width: 58px;
+    text-align: left;
+    padding-left: 10px;
+}
+.cartTab .cTab-name {
+    width: 425px;
+    text-align: left;
+}
+.cartTab .cTab-name .cn-Pic {
+    width: 54px;
+    height: 54px;
+    _height: 55px;
+    float: left;
+}
+.cartTab .cTab-name .cn-Pic img {
+    height: 52px;
+    vertical-align: middle;
+    width: 52px;
+    border: 1px solid #fff;
+}
+.cartTab .cTab-name .cn-Con {
+    height: 52px;
+    float: left;
+    padding-left: 10px;
+    width: 302px;
+}
+.cartTab .cTab-name .cn-Con .cn-Con-Name {
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cartTab .cTab-name .cn-Con .cn-Con-Pro {
+    height: 18px;
+    padding-top: 5px;
+    _height: 19px;
+}
+.cn-Con-Pro span {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    color: #e6393d;
+    margin-right: 6px;
+    padding: 0 3px 0 4px;
+    border: 1px solid #e6393d;
+    background-color: #fff;
+}
+.cartTab .cTab-jxPri {
+    width: 102px;
+    font-family: "微软雅黑";
+}
+.cartTab .cTab-gold {
+    width: 102px;
+}
+.cartTab .cTab-amount {
+    width: 120px;
+}
+.cTab-amount .cAmount-add {
+    margin: 0 auto;
+    width: 72px;
+    border: 1px solid #ccc;
+    height: 20px;
+    clear: both;
+}
+.cTab-amount .ca-minus {
+    background-position: 0 -43px;
+}
+.cTab-amount .ca-minus, .cTab-amount .ca-plus {
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    width: 21px;
+    display: inline-block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+input, select {
+    vertical-align: middle;
+}
+.cTab-amount .ctxt {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+    border: 0px;
+    font-size: 15px;
+    color: #333;
+    float: left;
+}
+.cTab-amount .plusOn {
+    background-position: -30px -71px;
+}
+.cTab-amount .cAmount-pro {
+    width: 74px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #E6393D;
+    margin: 8px auto 0;
+}
+.cartTab .cTab-subt {
+    width: 106px;
+    font-weight: bold;
+    color: #e6393d;
+    font-family: "微软雅黑";
+}
+.cartTab .cTab-ope {
+    width: 120px;
+}
+.cartTab .cTab-ope .opeBox {
+    width: 120px;
+    height: 60px;
+    position: relative;
+    padding-top: 20px;
+}
+.cTab-ope .opeBox a {
+    display: block;
+    line-height: 20px;
+    text-align: center;
+}
+.countMoney {
+    border: 1px solid #e4e4e4;
+    width: 998px;
+    position: relative;
+    margin-top: 20px;
+}
+.countMoney .CoupAndProm {
+    padding: 15px 30px 0;
+    height: 68px;
+}
+.CoupAndProm .cpTitle {
+    height: 28px;
+}
+.countMoney .CoupAndProm {
+    padding: 15px 30px 0;
+    height: 68px;
+}
+.countMoney .goodDetail {
+    width: 650px;
+    background: #fff;
+    padding: 15px 5px 15px 0;
+    border-top: 1px solid #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.countMoney .goodDetail .moneyTotal {
+    height: 26px;
+    line-height: 26px;
+    text-align: right;
+}
+.countMoney .goodDetail em {
+    display: inline-block;
+    font-style: normal;
+}
+.countMoney .goodDetail span {
+    display: inline-block;
+    font-family: "Microsoft YaHei";
+}
+.countMoney .goodDetail span b {
+    color: #c00;
+    font-weight: normal;
+}
+.countMoney .goodDetail .totTit {
+    margin-left: 30px;
+}
+.countMoney .goodDetail em {
+    display: inline-block;
+    font-style: normal;
+}
+.countMoney .goodDetail .goodMoney {
+    width: 77px;
+    text-align: left;
+}
+.countMoney .goodDetail em {
+    display: inline-block;
+    font-style: normal;
+}
+.countMoney .goodDetail .preMoney {
+    width: 65px;
+    text-align: left;
+}
+
+.countMoney .moneyDetail {
+    height: 46px;
+    line-height: 46px;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.countMoney .moneyDetCon {
+    width: 998px;
+    margin: 0 auto;
+}
+.countMoney .moneyDetail .goonShop {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 10px;
+}
+.countMoney .moneyDetail .goonShop label {
+    float: left;
+    margin-right: 20px;
+}
+.countMoney .moneyDetail .goonShop input {
+    margin: 17px 10px 0 0;
+    width: 14px;
+    height: 14px;
+    float: left;
+}
+.countMoney .moneyDetail .goonShop span {
+    float: left;
+}
+.countMoney .moneyDetail .goonShop .ma1 {
+    float: left;
+    display: inline-block;
+    margin-right: 18px;
+}
+.countMoney .moneyDetail .goonShop .ma2 {
+    float: left;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    color: #0066cc;
+    padding: 0 20px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+.countMoney .moneyDetail .countBox {
+    float: right;
+    height: 46px;
+    line-height: 46px;
+}
+.countMoney .moneyDetail .countBox .sett-submit {
+    display: none;
+    float: right;
+    width: 98px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff6633;
+    font-family: "Microsoft YaHei";
+    background: #fff9ee;
+    border: 1px solid #ffe2b4;
+    position: relative;
+    margin: -1px -1px 0 0;
+}
+.countMoney .moneyDetail .countBox .countBtnBox {
+    float: right;
+    height: 48px;
+    margin: -1px -1px 0 0;
+    position: relative;
+}
+.countMoney .moneyDetail .countBox .countBtnBox a {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    background: #e2010f;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+}
+.countMoney .moneyDetail .countBox .countSum {
+    float: right;
+    height: 46px;
+    margin-right: 25px;
+    font-family: "Microsoft YaHei";
+}
+.countMoney .moneyDetail .countBox .countSum b {
+    position: relative;
+    top: -2px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+}
+.countMoney .moneyDetail .countBox .countSum span {
+    color: #cf010e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.countMoney .moneyDetail .countBox .countSum span {
+    color: #cf010e;
+    font-size: 18px;
+    font-weight: bold;
+}
+.countMoney .moneyDetail .countBox .sumMoney {
+    padding-right: 4px;
+}

@@ -165,19 +165,7 @@ require(["jquery","index"],function($,fn1){
 			  $wd=$('#wd');
 			  $search=$('#search');
 			  fn1.inputwd($wd,$search);
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			  
-			
+			  			
 		    
 })
 
@@ -188,15 +176,14 @@ require(['jquery','details'],function($,fn1){
 		fn1.bigjing();
 	
 	
-
-
-
-
-
-
 })
 
-
+require(['jquery','cart'],function($,fn1){
+		//详情页的当大镜效果加图片切换
+		fn1.products();
+	
+	
+})
 
 
 
