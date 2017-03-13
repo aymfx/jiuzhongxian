@@ -28,6 +28,10 @@ define(['jquery',],function(){
 			   		})
 	    }
 	    
+	    Cart.prototype.addcart.function(){
+	    	  $('.cart_list li').
+	    }
+	    
 	    return new Cart();
 	    
 	    

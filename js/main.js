@@ -179,8 +179,10 @@ require(['jquery','details'],function($,fn1){
 })
 
 require(['jquery','cart'],function($,fn1){
-		//详情页的当大镜效果加图片切换
+		//购物车添加页面
 		fn1.products();
+		//开始添加购物车
+		fn1.addcart();
 	
 	
 })
