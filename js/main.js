@@ -182,7 +182,19 @@ require(["jquery","index"],function($,fn1){
 })
 
 
+//详情页的书写
+require(['jquery','details'],function($,fn1){
+		//详情页的当大镜效果加图片切换
+		fn1.bigjing();
+	
+	
 
+
+
+
+
+
+})
 
 
 
