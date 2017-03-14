@@ -1,150 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 	</head>
-	
+
 	<body>
 		<div class="topHeaderWrap">
-<div class="topHeader">
-    <div class="topCollect">
-        <ul>
-            <li name="_login_status_panel"><div class="topLoginBox"><span><a href="javascript:;" class="loginNow">Hi 请登录</a><a style="padding:0 3px" href="javascript:;" class="regNow">免费注册</a></span><i></i></div></li>
-        </ul>
-    </div>
-    <div class="topRight">
-        <ul>
-        <li><a class="myOrder" target="_blank" href="http://member.jiuxian.com/trademanage/my_order-9.htm">我的订单</a><i></i></li>
-        <li><a class="userCenter" target="_blank" href="http://member.jiuxian.com/index.htm">我的酒仙网</a><i></i></li>
-        <li class="hotTel"><span>客服热线</span><strong>400-617-9999</strong></li>
-        </ul>
-    </div>
-</div>
-</div>
+			<div class="topHeader">
+				<div class="topCollect">
+					<ul>
+						<li name="_login_status_panel">
+							<div class="topLoginBox"><span><a href="javascript:;" class="loginNow">Hi 请登录</a><a style="padding:0 3px" href="javascript:;" class="regNow">免费注册</a></span><i></i></div>
+						</li>
+					</ul>
+				</div>
+				<div class="topRight">
+					<ul>
+						<li>
+							<a class="myOrder" target="_blank" href="http://member.jiuxian.com/trademanage/my_order-9.htm">我的订单</a><i></i></li>
+						<li>
+							<a class="userCenter" target="_blank" href="http://member.jiuxian.com/index.htm">我的酒仙网</a><i></i></li>
+						<li class="hotTel"><span>客服热线</span><strong>400-617-9999</strong></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="midHeader">
-<div class="midHeaderBox">
-	<div class="jxwLogo"><p style="background:url(../img/cartImgs/bg_cart.png) no-repeat;" class="jxwIndex"><a href="../index.html"></a></p></div>
-	<div class="bayProcess">
-        <div class="proPic"></div>
-        <div class="proTex"><span class="on">我的购物车</span><span class="on2">确认订单信息</span><span class="on3">成功提交订单</span></div>
-    </div>
-</div>
-</div>		
-		
+			<div class="midHeaderBox">
+				<div class="jxwLogo">
+					<p style="background:url(../img/cartImgs/bg_cart.png) no-repeat;" class="jxwIndex">
+						<a href="../index.html"></a>
+					</p>
+				</div>
+				<div class="bayProcess">
+					<div class="proPic"></div>
+					<div class="proTex"><span class="on">我的购物车</span><span class="on2">确认订单信息</span><span class="on3">成功提交订单</span></div>
+				</div>
+			</div>
+		</div>
+
 		<!--我真正要干活的地方-->
 		<div class="shoppingCart">
 			<div class="cartBox">
 				<!--显示没有商品的情况-->
 				<div class="cart_container">
-					<div class="cartEmptyBox" style="display: none;">
-								<div class="cartEmptyCon">
-									<div class="empTit">您的购物车中没有商品，请先去挑选心爱的商品吧！<i class="cartIcon"></i></div>
-								    <div class="empPro">您可以选择现在<a href="javascript:;" class="loginNow">登录</a>，查看之前加入购物车的商品，或者<a href="http://www.jiuxian.com" target="_blank">随便逛逛</a></div>
-									<div class="empSearch">
-										<form id="searchForm" action="http://list.jiuxian.com/search.htm" method="get">
-								    		<input type="text" name="key" autocomplete="off" maxlength="50">
-								    		<span>搜索您感兴趣的商品</span>
-								    		<i class="cartIcon" onclick="javascript:$('#searchForm').submit();"></i>
-										</form>
-									</div>
-								</div>
+					<div class="cartEmptyBox">
+						<div class="cartEmptyCon">
+							<div class="empTit">您的购物车中没有商品，请先去挑选心爱的商品吧！<i class="cartIcon"></i></div>
+							<div class="empPro">您可以选择现在
+								<a href="javascript:;" class="loginNow">登录</a>，查看之前加入购物车的商品，或者
+								<a href="http://www.jiuxian.com" target="_blank">随便逛逛</a>
+							</div>
+							<div class="empSearch">
+								<form id="searchForm" action="http://list.jiuxian.com/search.htm" method="get">
+									<input type="text" name="key" autocomplete="off" maxlength="50">
+									<span>搜索您感兴趣的商品</span>
+									<i class="cartIcon" onclick="javascript:$('#searchForm').submit();"></i>
+								</form>
+							</div>
+						</div>
 					</div>
-					<div class="showlist">
+					<div class="showlist" style="display: none;">
 						<div class="myCartTitle">
 							<b class="text">购物车</b>
 						</div>
-						<div class="cartHeader"><!--列表标题-->
-								<div class="cartHeaderCon goodHeadCheck">
-									<input type="checkbox" class="checkAll" value="全选" checked="">
-									<span>全选</span>
-								</div>
-								<div class="cartHeaderCon goodHeadName">商品名称</div>
-								<div class="cartHeaderCon goodHeadPrice">酒仙价</div>
-								<div class="cartHeaderCon goodHeadGold">送金币</div>
-								<div class="cartHeaderCon goodHeadNum">数量</div>
-								<div class="cartHeaderCon goodHeadTotal">商品合计</div>
-								<div class="cartHeaderCon goodHeadOperate">操作</div>
+						<div class="cartHeader">
+							<!--列表标题-->
+							<div class="cartHeaderCon goodHeadCheck">
+								<input type="checkbox" class="checkAll" value="全选">
+								<span>全选</span>
+							</div>
+							<div class="cartHeaderCon goodHeadName">商品名称</div>
+							<div class="cartHeaderCon goodHeadPrice">酒仙价</div>
+							<div class="cartHeaderCon goodHeadGold">送金币</div>
+							<div class="cartHeaderCon goodHeadNum">数量</div>
+							<div class="cartHeaderCon goodHeadTotal">商品合计</div>
+							<div class="cartHeaderCon goodHeadOperate">操作</div>
 						</div>
 						<div class="cart-tabBox">
-		<table class="cartTab" cellpadding="0" cellspacing="0" name="1" id="tab">
-			<tbody>
-																													<tr class="cTab-tr  ">
-					<td class="cTab-check"><input type="checkbox" class="checkboxs" name="cart_item" cart_unit="_312" checked=""></td>
-					<td class="cTab-name">
-						<div class="cn-Pic">
-							<a target="_blank" href="http://www.jiuxian.com/goods-312.html"><img src="http://img08.jiuxian.com/2015/0321/8059226bb181485bbc78e5fe3f1bfed62.jpg" width="52" height="52"></a>
+							<table class="cartTab" cellpadding="0" cellspacing="0" name="1" id="tab">
+
+							</table>
 						</div>
-						<div class="cn-Con">
-							<p class=" cn-Con-Name"><a target="_blank" href="http://www.jiuxian.com/goods-312.html">42°洋河蓝色经典海之蓝 480ml</a></p>
-							    							    								<p class="cn-Con-Pro"><span class="tip1">限时购</span></p>								
-																					</div>
-					</td>
-					<td class="cTab-jxPri">￥<span>129.00</span></td>
-					<td class="cTab-gold">64金币</td>
-					<td class="cTab-amount">
-													    						<div class="cAmount-add">
-    							<span class="cartIcon ca-minus" cart_unit="_312"></span>
-    							<input class="ctxt" type="text" value="1" name="cart_unit_count" cart_unit="_312" restriction="-99" stock="414" src="">
-    							<span class="cartIcon ca-plus plusOn" cart_unit="_312" restriction="-99" stock="414"></span>
-    							
-    						</div>
-																																<div class="cAmount-pro numLimited">有货</div>
-																								</td>
-					<td class="cTab-subt">￥129.00</td>
-					<td class="cTab-ope">
-						<div class="opeBox">
-															<a href="javascript:void(0);" class="delete" cart_unit="_312">删除</a>
-														<a href="javascript:void(0);" class="sc" proid="312">收藏</a>
-						</div>
-					</td>
-				</tr>
-																							</tbody>
-						</table>
-	</div>
 						<div class="countMoney">
-  	<div class="CoupAndProm">
-    	
-    </div>
-    <div class="goodDetail clearfix">
-      <div class="moneyTotal"><em>商品数量：</em><span class="goodNum"><b>1</b>件</span><em class="totTit">赠送金币：</em><span class="goodMoney">64个</span></div>
-      <div class="moneyTotal"><em>活动立减：</em><span>￥</span><span class="preMoney">0</span></div>
-    </div>
-	<div class="step_offset"></div>
-    <div class="moneyDetail clearfix">
-    <div class="moneyDetCon">
-    	<div class="goonShop"><label><input type="checkbox" value="全选" class="checkAll" id="checkAll" checked=""><span>全选</span></label><a class="ma1 deleteGood" href="javascript:;">删除选中商品</a><a class="ma1 clearCart" href="javascript:;" id="clear_cart">清空购物车</a><a class="ma2" href="http://www.jiuxian.com">继续购物</a></div>
-      	<div class="countBox">
-			<div class="sett-submit">处理中...</div>
-            <div class="countBtnBox"><a href="javascript:;" class="countSubmit" id="submitOrderBtn">去结算</a></div>
-            <div class="countSum"><b>总计（不含运费）：</b><span>￥</span><span class="sumMoney">129.00 </span></div>
-      	</div>
-    </div>
-    </div>
-  </div>
+							<div class="CoupAndProm">
+
+							</div>
+							<div class="goodDetail clearfix">
+								<div class="moneyTotal"><em>商品数量：</em><span class="goodNum"><b>1</b>件</span><em class="totTit">赠送金币：</em><span class="goodMoney">64个</span></div>
+								<div class="moneyTotal"><em>活动立减：</em><span>￥</span><span class="preMoney">0</span></div>
+							</div>
+							<div class="step_offset"></div>
+							<div class="moneyDetail clearfix">
+								<div class="moneyDetCon">
+									<div class="goonShop"><label><input type="checkbox" value="全选" class="checkAll" id="checkAll" ><span>全选</span></label>
+										<a class="ma1 deleteGood" href="javascript:;">删除选中商品</a>
+										<a class="ma1 clearCart" href="javascript:;" id="clear_cart">清空购物车</a>
+										<a class="ma2" href="http://www.jiuxian.com">继续购物</a>
+									</div>
+									<div class="countBox">
+										<div class="sett-submit">处理中...</div>
+										<div class="countBtnBox">
+											<a href="javascript:;" class="countSubmit" id="submitOrderBtn">去结算</a>
+										</div>
+										<div class="countSum"><b>总计（不含运费）：</b><span>￥</span><span class="sumMoney">129.00 </span></div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					
+
 				</div>
 			</div>
 			<!--从下面的取数据-->
 			<div class="cart_list">
-			
+
+			</div>
 		</div>
-		</div>
-		
-		
-		
-		
+
 		<!--		
 	//foot页面-->
-	
-			<footer id="foot_i" style="clear: both;">
-			  <section id="footTopBox" class="margin">
-			  		<div class="footerTop">
-						<div class="footerContact"><i class="publicIcon"></i><b>400-617-9999</b><span>客服热线</span><span>9:00-23:00</span><span>贴心服务</span>
-						</div>
+
+		<footer id="foot_i" style="clear: both;">
+			<section id="footTopBox" class="margin">
+				<div class="footerTop">
+					<div class="footerContact"><i class="publicIcon"></i><b>400-617-9999</b><span>客服热线</span><span>9:00-23:00</span><span>贴心服务</span>
+					</div>
 					<div class="footerTopRight">
 						<div class="ftRight-tit">优惠促销早知道</div>
 						<div class="ftRight-form">
@@ -153,74 +138,119 @@
 							<i class="publicIcon" id="subscribe_but"></i>
 						</div>
 					</div>
-					</div>
-					<div class="footerServices">
-												<ul class="clearfix">
+				</div>
+				<div class="footerServices">
+					<ul class="clearfix">
 						<li class="servicesItme01">
-						<h3><i class="publicIcon"></i><span>新手入门</span></h3>
-						<p><a href="#" target="_blank" rel="nofollow">购物保障</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">服务协议</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">发票说明</a></p>
+							<h3><i class="publicIcon"></i><span>新手入门</span></h3>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">购物保障</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">服务协议</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">发票说明</a>
+							</p>
 						</li>
 						<li class="servicesItme02">
-						<h3><i class="publicIcon"></i><span>常见问题</span></h3>
-						<p><a href="#" target="_blank" rel="nofollow">红包使用</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">返现使用</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">兑换码</a></p>
+							<h3><i class="publicIcon"></i><span>常见问题</span></h3>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">红包使用</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">返现使用</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">兑换码</a>
+							</p>
 						</li>
 						<li class="servicesItme03">
-						<h3><i class="publicIcon"></i><span>配送说明</span></h3>
-						<p><a href="#" target="_blank" rel="nofollow">配送时间</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">配送费用</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">配送范围</a></p>
+							<h3><i class="publicIcon"></i><span>配送说明</span></h3>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">配送时间</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">配送费用</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">配送范围</a>
+							</p>
 						</li>
 						<li class="servicesItme04">
-						<h3><i class="publicIcon"></i><span>支付方式</span></h3>
-						<p><a href="#" target="_blank" rel="nofollow">货到付款</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">在线支付</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">线下支付</a></p>
+							<h3><i class="publicIcon"></i><span>支付方式</span></h3>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">货到付款</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">在线支付</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">线下支付</a>
+							</p>
 						</li>
 						<li class="servicesItme05">
-						<h3><i class="publicIcon"></i><span>售后服务</span></h3>
-						<p><a href="#" target="_blank" rel="nofollow">品质保证</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">退换货政策</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">退换货流程</a></p>
+							<h3><i class="publicIcon"></i><span>售后服务</span></h3>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">品质保证</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">退换货政策</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">退换货流程</a>
+							</p>
 						</li>
 						<li class="servicesItme06">
-						<h3><i class="publicIcon"></i><span>特色服务</span></h3>
-						<p><a href="#" target="_blank">会员俱乐部</a></p>
-						<p><a href="#" target="_blank" rel="nofollow">企业客户</a></p>
-						<p><a target="_blank" href="#">酒仙社区</a></p>
+							<h3><i class="publicIcon"></i><span>特色服务</span></h3>
+							<p>
+								<a href="#" target="_blank">会员俱乐部</a>
+							</p>
+							<p>
+								<a href="#" target="_blank" rel="nofollow">企业客户</a>
+							</p>
+							<p>
+								<a target="_blank" href="#">酒仙社区</a>
+							</p>
 						</li>
 						<li class="jxMicroblogging">
-						<div class="item sinaMb"><div class="sinaMbCom clearfix"><a href="#" target="_blank" rel="nofollow"><i class="publicIcon"></i></a><a href="#" target="_blank" rel="nofollow">酒仙新浪微博</a></div></div>
-						<div class="item weixin"><div class="weixinCon clearfix" flag="hide"><i class="publicIcon"></i><a id="jxWeixin" href="javascript:;" target="_blank" rel="nofollow">酒仙微信</a></div>
-						<div class="weixinCode" id="weixinCode">
-						</div></div>
+							<div class="item sinaMb">
+								<div class="sinaMbCom clearfix">
+									<a href="#" target="_blank" rel="nofollow"><i class="publicIcon"></i></a>
+									<a href="#" target="_blank" rel="nofollow">酒仙新浪微博</a>
+								</div>
+							</div>
+							<div class="item weixin">
+								<div class="weixinCon clearfix" flag="hide"><i class="publicIcon"></i>
+									<a id="jxWeixin" href="javascript:;" target="_blank" rel="nofollow">酒仙微信</a>
+								</div>
+								<div class="weixinCode" id="weixinCode">
+								</div>
+							</div>
 						</li>
-						</ul>
-					</div>
-			  </section>
-			  <section id="footBottomBox" class="margin">
-			  	<div class="footerBot margin">
-			  		<div class="footerBotLeft">
-	<p class="footerInfo">
-		<a href="#" target="_blank" rel="nofollow">公司简介<i></i></a>
-		<a href="#" rel="nofollow">管理团队<i></i></a>
-		<a href="#" target="_blank" rel="nofollow">媒体报道<i></i></a>
-		<a href="#" target="_blank" rel="nofollow">联系我们<i></i></a>
-		<a href="#" target="_blank" rel="nofollow">招贤纳士<i></i></a>
-		<a href="#" target="_blank">友情链接<i></i></a>
-		<a href="#" target="_blank">网站地图<i></i></a>
-		<a href="#" target="_blank">品牌大全<i></i></a>
-	</p>
-	<p class="copyright" style="font-family: '微软雅黑';">酒仙网电子商务股份有限公司&copy;酒仙网  2011 jiuxian.com All Rights Reserved 
-		<a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备11007961号-1</a>
-		 京公网安备1101050188221
-	</p>
+					</ul>
+				</div>
+			</section>
+			<section id="footBottomBox" class="margin">
+				<div class="footerBot margin">
+					<div class="footerBotLeft">
+						<p class="footerInfo">
+							<a href="#" target="_blank" rel="nofollow">公司简介<i></i></a>
+							<a href="#" rel="nofollow">管理团队<i></i></a>
+							<a href="#" target="_blank" rel="nofollow">媒体报道<i></i></a>
+							<a href="#" target="_blank" rel="nofollow">联系我们<i></i></a>
+							<a href="#" target="_blank" rel="nofollow">招贤纳士<i></i></a>
+							<a href="#" target="_blank">友情链接<i></i></a>
+							<a href="#" target="_blank">网站地图<i></i></a>
+							<a href="#" target="_blank">品牌大全<i></i></a>
+						</p>
+						<p class="copyright" style="font-family: '微软雅黑';">酒仙网电子商务股份有限公司&copy;酒仙网 2011 jiuxian.com All Rights Reserved
+							<a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">京ICP备11007961号-1</a>
+							京公网安备1101050188221
+						</p>
 
-	<p class="friendLink">
-	<span class="linkWidth">
+						<p class="friendLink">
+							<span class="linkWidth">
 			<a href="#" target="_blank">大麦网</a>|
 			<a href="#" target="_blank">1折网</a>|
 			<a href="#" target="_blank">铁血军事</a>|
@@ -231,35 +261,36 @@
 			<a href="#" target="_blank">名鞋库</a>|
 			<a href="#" target="_blank">酒仙网团购</a>|
 	</span>
-			<a href="#" target="_blank" class="moreLink">更多</a>
-	</p>
-<p class="footerAddr" style="color:#999; line-height:22px;"><span>统一社会信用代码&nbsp;&nbsp;91110302554833311D&nbsp;&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;SP1103021310005747&nbsp;&nbsp;&nbsp;</span></p>
-<p class="footerAddr" style="color:#999; line-height:22px; padding-bottom:7px;">
-	<span>地址：北京市北京经济技术开发区经海五路58号院8号楼1至6层</span>
-</p>
-<p class="copybot">
-	
-	<a href="#" target="_blank" rel="nofollow"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" width="128" height="47"></a>
-	<a href="#" target="_blank" rel="nofollow">
-		<img src="http://misc.jiuxian.com/img/newIndexImg/copyBot04.jpg" width="128" height="47"></a>
-	<a href="#" target="_blank" rel="nofollow">
-		<img src="http://misc.jiuxian.com/img/newIndexImg/copyBot05.jpg" width="128" height="47"></a>
-</p>
-<p class="footerPro" style="padding:11px 0 6px;">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
-</div>
-<div class="footerBotCode">
-	<div class="jxPho-code">
-		<p class="codePic"><img alt="手机酒仙网" src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg" width="80" height="80"></p>
-		<p class="codeText">手机酒仙网</p>
-	</div>
-	<div class="jkd-code">
-		<p class="codePic"><img alt="酒快到" src="http://misc.jiuxian.com/img/newIndexImg/jkd-code.jpg" width="80" height="80"></p>
-		<p class="codeText">酒快到</p>
-	</div>
-</div>
-			  	</div>
-			  </section>
+							<a href="#" target="_blank" class="moreLink">更多</a>
+						</p>
+						<p class="footerAddr" style="color:#999; line-height:22px;"><span>统一社会信用代码&nbsp;&nbsp;91110302554833311D&nbsp;&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;SP1103021310005747&nbsp;&nbsp;&nbsp;</span></p>
+						<p class="footerAddr" style="color:#999; line-height:22px; padding-bottom:7px;">
+							<span>地址：北京市北京经济技术开发区经海五路58号院8号楼1至6层</span>
+						</p>
+						<p class="copybot">
+
+							<a href="#" target="_blank" rel="nofollow"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" width="128" height="47"></a>
+							<a href="#" target="_blank" rel="nofollow">
+								<img src="http://misc.jiuxian.com/img/newIndexImg/copyBot04.jpg" width="128" height="47"></a>
+							<a href="#" target="_blank" rel="nofollow">
+								<img src="http://misc.jiuxian.com/img/newIndexImg/copyBot05.jpg" width="128" height="47"></a>
+						</p>
+						<p class="footerPro" style="padding:11px 0 6px;">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+					</div>
+					<div class="footerBotCode">
+						<div class="jxPho-code">
+							<p class="codePic"><img alt="手机酒仙网" src="http://misc.jiuxian.com/img/newIndexImg/jxPho-code.jpg" width="80" height="80"></p>
+							<p class="codeText">手机酒仙网</p>
+						</div>
+						<div class="jkd-code">
+							<p class="codePic"><img alt="酒快到" src="http://misc.jiuxian.com/img/newIndexImg/jkd-code.jpg" width="80" height="80"></p>
+							<p class="codeText">酒快到</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</footer>
-		<script data-main = "../js/main" src="../js/require.js"></script>
+		<script data-main="../js/main" src="../js/require.js"></script>
 	</body>
+
 </html>

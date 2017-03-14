@@ -1,7 +1,8 @@
 //引入jquery
 require.config({
 	  paths:{
-	  	"jquery":"jquery-1.11.1.min"
+	  	"jquery":"jquery-1.11.1.min",
+	  	"cookie":"jquery.cookie"
 	  }
 })
 //主页面
@@ -181,8 +182,8 @@ require(['jquery','details'],function($,fn1){
 require(['jquery','cart'],function($,fn1){
 		//购物车添加页面
 		fn1.products();
-		//开始添加购物车
-		fn1.addcart();
+	
+	
 	
 	
 })
