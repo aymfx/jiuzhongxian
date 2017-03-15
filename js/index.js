@@ -184,8 +184,7 @@ define(['jquery'],function(){
     	     },function(){
     	     	  timer=setInterval(function(){
     	     	    var l=-(num*268);
-    	     	    console.log(l);
-    	     	   console.log(l+":"+r);
+
     	     	    if(l==r){
     	     	    	$btn.animate({
     	     	    	left:l
@@ -251,6 +250,7 @@ define(['jquery'],function(){
     	      		if(num<0){
     	      			num=0;
     	      		}
+    	      		$btn.eq(num).addClass('on').siblings().removeClass('on');
     	      		$cheap.animate({
 		  			left:num*-1198
 		  		})
@@ -260,6 +260,7 @@ define(['jquery'],function(){
     	      		if(num>2){
     	      			num=2;
     	      		}
+    	      		$btn.eq(num).addClass('on').siblings().removeClass('on');
     	      		$cheap.animate({
 		  			left:num*-1198
 		  		})
@@ -348,7 +349,7 @@ define(['jquery'],function(){
     	    	  	  $btnlr.find('.prevPage').on('click',function(){
     	    	  	  	var l=parseInt($('.logoFirstbd').css('left'));
     	    	  	  	if(l==0){
-    	    	  	  		  alert('最左了');
+    	    	  	  		  
     	    	  	  	}else{
     	    	  	  		$('.logoFirstbd').animate({
     	    	  	  			left:0
@@ -359,7 +360,7 @@ define(['jquery'],function(){
     	    	  	   $btnlr.find('.nextPage').on('click',function(){
     	    	  	   	     var l=parseInt($('.logoFirstbd').css('left'));
     	    	  	  	if(l==-1200){
-    	    	  	  		  alert('最右了');
+    	    	  	  		 	
     	    	  	  	}else{
     	    	  	  		$('.logoFirstbd').animate({
     	    	  	  			left:-1200

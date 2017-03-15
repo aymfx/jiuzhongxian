@@ -26,7 +26,7 @@ define(['jquery', 'cookie'], function() {
 			new Cart().addcart(data);
 
 		}).fail(function() {
-			alert(1);
+			
 		})
 
 	}
@@ -211,7 +211,8 @@ define(['jquery', 'cookie'], function() {
 				totals -= num_a;
 				sumAll -= price_a;
 
-				alert(totals + ":" + sumAll);
+				
+				
 				productarr.splice(uidx1, 1);
 				numarr.splice(uidx1, 1);
 

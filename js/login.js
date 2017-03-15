@@ -14,9 +14,7 @@ define(["jquery"],function($){
 		  	  	    	data:str,
 		  	  	    	success:function(data){
 		  	  	    		alert(data);
-		  	  	    		setTimeout(function(){
-		  	  	    			window.location.href="../index.html";
-		  	  	    		},1000)
+		  	  	    		
 		  	  	    	},
 		  	  	    	error:function(){
 		  	  	    		alert("登录失败");

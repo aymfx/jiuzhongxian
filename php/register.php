@@ -3,9 +3,9 @@
 	
 	//获取用户数据
 	$iphone=$_POST["iphone"];
-	$password=$_POST["password"];
+	$password=md5($_POST["password"]);
 	$email=$_POST["email"];
-	$flag=true;
+	$flag=false;
 	//判断用户是否存在
 	$sql="select * ".
 	 "from jiuxianwang.user";
@@ -17,6 +17,9 @@
 	 	if($rows['iphone']==$iphone){
 	 		  $flag=false;
 			echo "手机号已经存在";
+			break;
+	 	}else{
+	 		$flag=true;
 	 	}
 	 }
 	 if($flag){
@@ -24,17 +27,14 @@
 	 	$sql="insert into jiuxianwang.user ".
 	 "values(null,'".$iphone."'".",'".$email."','".$password."');";
 	 $retval=mysql_query($sql,$conn);
+	  	
 	 echo "注册成功";
 	 if(!$retval){
 	 	die('插入失败'.mysql_error());
 	 }
+	 }else{
+	 	echo "注册失败";
 	 }
-	
-	
-	
-	 
-	
-	
 	 mysql_close($conn);
 	
 	

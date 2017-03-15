@@ -4049,6 +4049,101 @@ area {
     color: #666;
     margin-left: 5px;
 }
+
+.u-buy-lay {
+    width: 460px;
+    height: 312px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -156px 0 0 -230px;
+    background: #fff;
+    border: 6px solid #ccc;
+    /* display: none; */
+    z-index: 1000;
+}
+.u-buy-con {
+    height: 262px;
+    padding: 30px 30px 20px;
+    box-shadow: 0 0 2px 0 #888;
+    overflow: hidden;
+}
+.u-buy-ok, .u-buy-no {
+    height: 28px;
+    line-height: 28px;
+    font-size: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.u-buy-ok i{
+    background-position: -201px -55px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.u-buy-ok span{
+    height: 28px;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.u-buy-con .u-buy-gon {
+    height: 34px;
+    padding: 11px 0 19px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    font-size: 0;
+    vertical-align: middle;
+}
+.u-buy-gon .u-buy-g {
+    background: #fbfbfb;
+    color: #666;
+    border: 1px solid #ddd;
+    margin-right: 12px;
+}
+.u-buy-gon .u-buy-go {
+    background: #c33;
+    color: #fff;
+    border: 1px solid #c33;
+}
+.u-collect-list {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.u-buy-close {
+    background-position: -230px -19px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.u-buy-gon a {
+    display: inline-block;
+    width: 94px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    vertical-align: middle;
+}
+#box{width: 100%;height: 100%;position: fixed;left: 0;top:0;background:rgba(0,0,0,.3);display: none;z-index: 99;}
+
+
+
+
+
+
+
+
+
+
 //cart购物车
 .topHeaderWrap {
     width: 100%;

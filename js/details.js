@@ -82,17 +82,28 @@ define(['jquery'],function(){
 			$('#move').css('visibility','hidden');
 			$('#big_box').css('display','none');
 		})
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
+	Details.prototype.addcart=function(){
+			//打开
+			$('.buyBtn-cart').on('click',function(){
+				  $('#box').css('display','block');
+			})
+			//关闭
+			$('.u-buy-close').on('click',function(){
+				$('#box').css('display','none');
+			})
+			//跳转到购物车继续购物
+			$('.u-buy-g').on('click',function(){
+				$('#box').css('display','none');
+			})
+			//
+			$('.u-buy-go').on('click',function(){
+				window.location.href='../html/cart.html';
+				
+			})
 	
+	}
 	
 	
 	

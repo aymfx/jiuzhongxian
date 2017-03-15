@@ -68,9 +68,7 @@ define(["jquery"],function(){
 		  	  	    	async:true,
 		  	  	    	success:function(data){
 		  	  	    		alert(data);
-		  	  	    		setTimeout(function(){
-		  	  	    			window.location.href="../html/login.html";
-		  	  	    		},1000)
+		  	  	    		
 		  	  	    	},
 		  	  	    	error:function(){
 		  	  	    		alert("注册失败,用户名或者邮箱存在");
