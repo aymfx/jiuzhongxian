@@ -1320,6 +1320,7 @@ i.comIcon5 {
 .topTenBox {
   float: right;
   height: 162px;
+  width: 989px;
 }
 
 .topTenNavBox {
@@ -2100,6 +2101,9 @@ li.on {
   padding-left: 39px;
   padding-top: 16px;
 }
+#login_box input{
+	line-height: 40px;
+}
 #login_box .login_top {
   width: 270px;
   height: 43px;
@@ -2559,14 +2563,19 @@ li.on {
   text-align: center;
   display: block;
   position: absolute;
+  background:rgba(0,255,0,0);
   opacity: 0;
   filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   top: 91px;
   left: 598px;
-  background: #99FF99;
+  color:red;
+  
   border-radius: 5px;
 }
-
+#register_main input{
+	line-height: 40px;
+}
 .rightSidebarBox {
   width: 35px;
   height: 100%;

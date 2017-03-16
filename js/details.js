@@ -1,4 +1,4 @@
-define(['jquery'],function(){
+define(['jquery','cookie'],function(){
 	//定义构造函数
 	function Details(){
 		
@@ -38,13 +38,14 @@ define(['jquery'],function(){
 		
 		
 		//放大镜效果
-		var $w=$('#small_box').width()*$('#big_box').width()/880;
-		var $h=$('#small_box').height()*$('#big_box').height()/880;
+		var $w=$('#small_box').width()*$('#big_box').width()/800;
+		var $h=$('#small_box').height()*$('#big_box').height()/800;
 		$('#move').css({
 			width:$w,
 			height:$h
 		})
-		var scale=880/$('#small_box').width()
+		var scale=800/$('#small_box').width()
+		
 		$('#small_box').on('mouseenter',function(){
 			$('#move').css('visibility','visible');
 			$('#big_box').css('display','block');
@@ -85,9 +86,26 @@ define(['jquery'],function(){
 
 	}
 	Details.prototype.addcart=function(){
+				var numarr=[];
+				var productarr=[];
+				var s=1;
+			//获取商品数量
+			$('#_nub').on('keyup',function(){
+				s=$(this).val();
+				if(s==0){
+					s=1;
+					alert("至少有一件哦");
+					$(this).val(s)
+				}
+			})
 			//打开
 			$('.buyBtn-cart').on('click',function(){
 				  $('#box').css('display','block');
+				  
+				  numarr.push(s);
+				  productarr.push(1);
+				  $.cookie('nums', numarr);
+				  $.cookie('products', productarr);
 			})
 			//关闭
 			$('.u-buy-close').on('click',function(){
@@ -100,6 +118,7 @@ define(['jquery'],function(){
 			//
 			$('.u-buy-go').on('click',function(){
 				window.location.href='../html/cart.html';
+				return false;
 				
 			})
 	

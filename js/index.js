@@ -22,7 +22,7 @@ define(['jquery'],function(){
 		   			str+='<li><div class="indexTabPic"><a href="#" target="_blank" title=""><img src="'+data[i].src+'" width="160" height="160"></a><p class="Tag Tag_b"><span>疯抢<br>口粮酒</span></p></div><div class="indexTabTit"><a href="#" target="_blank" title="">'+data[i].title+'</a></div><div class="indexTabPrice homegoodPrice"><strong  class="jxIndex_nowPrice_11344">'+data[i].price+'</strong></div></li>';
 		   			}
 		   			str+='</ul></div>';
-		   			$tab[0].innerHTML=str;
+		   			$tab.html(str);
 		   		}).fail(function(){
 		   			console.log("有问题");
 		   		})
@@ -127,7 +127,7 @@ define(['jquery'],function(){
 		   			str+='<li><div class="indexTabPic"><a href="#" target="_blank" title=""><img src="'+data[i].src+'" width="160" height="160"></a><p class="Tag Tag_b"><span>疯抢<br>口粮酒</span></p></div><div class="indexTabTit"><a href="#" target="_blank" title="">'+data[i].title+'</a></div><div class="indexTabPrice homegoodPrice"><strong  class="jxIndex_nowPrice_11344">'+data[i].price+'</strong></div></li>';
 		   			}
 		   			str+='</ul></div>';
-		   			$tab[0].innerHTML=str;
+		   			$tab.html(str);
 		   		}).fail(function(){
 		   			console.log("有问题");
 		   		})
@@ -226,7 +226,7 @@ define(['jquery'],function(){
 		   				+data[i].y_price+'</strong></div><div class="raceListTime" id="jxIndex_timeAct_30819" ><span>剩余:</span><i class="hours">25</i><span>小时</span><i class="minutes">48</i><span>分钟</span><i class="seconds">21</i><span>秒</span></div></li>'
 		   			}
 		   			str+='</ul></div>';
-		   			$tab[0].innerHTML=str;
+		   			$tab.html(str);
 
 		   		}).fail(function(){
 		   			console.log("有问题");
@@ -294,6 +294,7 @@ define(['jquery'],function(){
 			   			}
 			   			str+='</ul></div></div>';
 			   			$logoAll.eq(0).html(str);
+			   			
 			   		})
 			   		
 			   	//第二个盒子啊
